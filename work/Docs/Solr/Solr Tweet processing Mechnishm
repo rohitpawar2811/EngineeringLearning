@@ -1,0 +1,35 @@
+## The Arabic Tweets Platform :
+
+Architecture
+1. Tweet
+2. Tweet Processing
+3. Tweet Indexing Component 
+4. Event Extractor and Identifier
+5. Transfer the tweet feeds to Backend
+
+## Tweet Processing Module: 
+
+### Classification at indexing time: 
+- like tweet is political, sports, religious etc.
+- Adaptive classifier (Native Bayes/ SVM )
+
+### Scoring at indexing time : 
+
+- Recent(date),latest tweet in a specific category.
+
+- Top (score-field) trending tweet (high retweet rate in the past 48 hour) will make this tweet on the top of the feed.
+
+score = retweet count / (last_retweet - created_tweet)
+
+this core is part of schema field.
+
+### Indexing Module
+
+- Used Core combination which stores both media(audio, video), text etc.
+- Archiving of tweets.
+
+
+Scoring , Schemaless Design, classification, Stop_words etc things.
+
+
+CAST(order_date AS TIMESTAMP WITH TIME ZONE 'UTC') = CAST(CURRENT_TIMESTAMP AS TIMESTAMP WITH TIME ZONE 'UTC');

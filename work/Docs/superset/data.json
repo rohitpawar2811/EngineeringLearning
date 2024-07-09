@@ -1,0 +1,1693 @@
+{
+  "CHART--wVTKUZP8g": {
+    "children": [],
+    "id": "CHART--wVTKUZP8g",
+    "meta": {
+      "chartId": 4141,
+      "height": 50,
+      "sliceName": "ADOC SV - Store Rejections with Reason Graph",
+      "uuid": "8ad025cb-87c8-470d-b4c1-1f03a68be01d",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "ROW-mMYJo5Tmig"
+    ],
+    "type": "CHART"
+  },
+  "CHART-0IjNyQzZ4e": {
+    "children": [],
+    "id": "CHART-0IjNyQzZ4e",
+    "meta": {
+      "chartId": 4159,
+      "height": 50,
+      "sliceName": "ADOC NI - Shopify Fulfillment Status Since Last Day Pie Chart",
+      "uuid": "6a26fa60-7f59-4c6a-9b4e-e460aa3f9966",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "TABS-o5QfKorjKr",
+      "TAB-6aeEXLfW_T",
+      "ROW-028JmGlbG"
+    ],
+    "type": "CHART"
+  },
+  "CHART-1qdYwlPuUW": {
+    "children": [],
+    "id": "CHART-1qdYwlPuUW",
+    "meta": {
+      "chartId": 4183,
+      "height": 50,
+      "sliceName": "ADOC NI - Duplicate Orders",
+      "uuid": "2d816e37-f076-452e-8fb9-c5c7bdd65cde",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "ROW-M7lGGJXa1B"
+    ],
+    "type": "CHART"
+  },
+  "CHART-3xSvj3rlIE": {
+    "children": [],
+    "id": "CHART-3xSvj3rlIE",
+    "meta": {
+      "chartId": 4120,
+      "height": 50,
+      "sliceName": "ADOC HN - Shopify Fulfillment Status Since Last Day Pie Chart",
+      "uuid": "5745002e-c460-4467-90f7-74416b1697ce",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "TABS-Be-svHIFUW",
+      "TAB-0ZPcUDkLRx",
+      "ROW-0z583kaWE"
+    ],
+    "type": "CHART"
+  },
+  "CHART-5tWiKu-58m": {
+    "children": [],
+    "id": "CHART-5tWiKu-58m",
+    "meta": {
+      "chartId": 4133,
+      "height": 50,
+      "sliceName": "ADOC GT - Shopify Fulfillment Status Since Last Day Pie Chart",
+      "uuid": "b824e261-e4d5-4e3b-98c2-6a82e6e3ae9b",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "TABS-BOrLJgn2Jg",
+      "TAB-VooGxxD2oF",
+      "ROW-NwwyRIqlo"
+    ],
+    "type": "CHART"
+  },
+  "CHART-6sqNKKxiiQ": {
+    "children": [],
+    "id": "CHART-6sqNKKxiiQ",
+    "meta": {
+      "chartId": 4123,
+      "height": 50,
+      "sliceName": "ADOC HN - Shopify Fulfillment Status Since Last Day Table",
+      "sliceNameOverride": "Since Last Day Table",
+      "uuid": "baf18b7f-d608-4a89-baa1-0a90dc9fef42",
+      "width": 12
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "TABS-Be-svHIFUW",
+      "TAB-v9X8uK5kw",
+      "ROW-yxepw78Vc"
+    ],
+    "type": "CHART"
+  },
+  "CHART-7OG_m1dM-F": {
+    "children": [],
+    "id": "CHART-7OG_m1dM-F",
+    "meta": {
+      "chartId": 4155,
+      "height": 50,
+      "sliceName": "ADOC CR - Store Daily Orders Fulfillment Report",
+      "uuid": "902526af-74d9-4bb5-89a5-d25382de2d7c",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "ROW-HTAsSnbYfe"
+    ],
+    "type": "CHART"
+  },
+  "CHART-7qwOnICMpI": {
+    "children": [],
+    "id": "CHART-7qwOnICMpI",
+    "meta": {
+      "chartId": 4156,
+      "height": 50,
+      "sliceName": "ADOC CR - Store Rejections with Reason Graph",
+      "uuid": "b0963bb9-7f3d-455c-97ac-50c0deeebe84",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "ROW-E29njJ4CHg"
+    ],
+    "type": "CHART"
+  },
+  "CHART-8-2_4jMacV": {
+    "children": [],
+    "id": "CHART-8-2_4jMacV",
+    "meta": {
+      "chartId": 4129,
+      "height": 50,
+      "sliceName": "ADOC GT - Shipping Performance Report",
+      "uuid": "9765e0f8-ae7c-45e1-9e18-04d2fa31f0f6",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "ROW-mI3Y2dOoYg"
+    ],
+    "type": "CHART"
+  },
+  "CHART-A62jTdYO9S": {
+    "children": [],
+    "id": "CHART-A62jTdYO9S",
+    "meta": {
+      "chartId": 4242,
+      "height": 50,
+      "sliceName": "Adoc GT -  Facility fill rate report",
+      "uuid": "f371b8fb-535f-443d-aed7-9f12165787ce",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "ROW-U1JUKheyrO"
+    ],
+    "type": "CHART"
+  },
+  "CHART-ARgF2Np-EE": {
+    "children": [],
+    "id": "CHART-ARgF2Np-EE",
+    "meta": {
+      "chartId": 4241,
+      "height": 50,
+      "sliceName": "Adoc SV -  Facility fill rate report",
+      "uuid": "eb15e54b-27be-4aab-ac3b-151a4ca9072b",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "ROW-Mtlp2sK51"
+    ],
+    "type": "CHART"
+  },
+  "CHART-B7w2vV8m8L": {
+    "children": [],
+    "id": "CHART-B7w2vV8m8L",
+    "meta": {
+      "chartId": 4128,
+      "height": 50,
+      "sliceName": "ADOC GT - Store Daily Orders Fulfillment Report",
+      "uuid": "4915e1d8-59d5-41df-99af-dce3e07d2f54",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "ROW-ED4VWTxmT"
+    ],
+    "type": "CHART"
+  },
+  "CHART-BEI160X0Em": {
+    "children": [],
+    "id": "CHART-BEI160X0Em",
+    "meta": {
+      "chartId": 4167,
+      "height": 50,
+      "sliceName": "ADOC NI - Unreconciled Report",
+      "uuid": "1b09a7f7-bc6e-45ad-adbd-0493c59b1164",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "ROW-AaywoyJqa1"
+    ],
+    "type": "CHART"
+  },
+  "CHART-BanuSf82fJ": {
+    "children": [],
+    "id": "CHART-BanuSf82fJ",
+    "meta": {
+      "chartId": 4175,
+      "height": 50,
+      "sliceName": "ADOC GT - Duplicate Orders",
+      "uuid": "a46a374c-2742-46b5-8259-8a001a68a62c",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "ROW-ED4VWTxmT"
+    ],
+    "type": "CHART"
+  },
+  "CHART-BymHh6n-Ie": {
+    "children": [],
+    "id": "CHART-BymHh6n-Ie",
+    "meta": {
+      "chartId": 4191,
+      "height": 50,
+      "sliceName": "ADOC HN - Cancelled Orders Report",
+      "uuid": "44b7c2ae-cb88-49f8-a6c6-abd900d49eee",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "ROW-0WxMiKCdwM"
+    ],
+    "type": "CHART"
+  },
+  "CHART-DTYQxuLm-j": {
+    "children": [],
+    "id": "CHART-DTYQxuLm-j",
+    "meta": {
+      "chartId": 4126,
+      "height": 60,
+      "sliceName": "ADOC HN - Store Rejections with Reason Graph",
+      "uuid": "0b9d5c8b-ae29-4ac3-bbf2-7c957f8581a1",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "ROW-rAQQ4UDiL"
+    ],
+    "type": "CHART"
+  },
+  "CHART-EzYOmp2uuV": {
+    "children": [],
+    "id": "CHART-EzYOmp2uuV",
+    "meta": {
+      "chartId": 4149,
+      "height": 50,
+      "sliceName": "ADOC CR - Rejected Order Items Report",
+      "uuid": "5b73c24a-c48f-4242-81ba-42dee355fb8d",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "ROW-E29njJ4CHg"
+    ],
+    "type": "CHART"
+  },
+  "CHART-InQGrfhd8Q": {
+    "children": [],
+    "id": "CHART-InQGrfhd8Q",
+    "meta": {
+      "chartId": 4145,
+      "height": 50,
+      "sliceName": "ADOC SV - Shipping Performance Report",
+      "uuid": "65aa6418-7f7b-4cce-8930-ea14ef92f35f",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "ROW-6HDdU4j0zm"
+    ],
+    "type": "CHART"
+  },
+  "CHART-JPeU9KNJE7": {
+    "children": [],
+    "id": "CHART-JPeU9KNJE7",
+    "meta": {
+      "chartId": 4122,
+      "height": 50,
+      "sliceName": "ADOC HN - Shopify Fulfillment Status All time Line Chart",
+      "sliceNameOverride": "All",
+      "uuid": "af9f21e0-b552-42d8-a476-1033ba3fd275",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "TABS-Be-svHIFUW",
+      "TAB-0ZPcUDkLRx",
+      "ROW-0z583kaWE"
+    ],
+    "type": "CHART"
+  },
+  "CHART-LHTpY-DBnZ": {
+    "children": [],
+    "id": "CHART-LHTpY-DBnZ",
+    "meta": {
+      "chartId": 4247,
+      "height": 50,
+      "sliceName": "Adoc NI -  Facility fill rate report",
+      "uuid": "c1b05abe-5b0d-4659-a17e-59659cde17e5",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "ROW-l1hUdld1lw"
+    ],
+    "type": "CHART"
+  },
+  "CHART-MXGqTMRV5K": {
+    "children": [],
+    "id": "CHART-MXGqTMRV5K",
+    "meta": {
+      "chartId": 4139,
+      "height": 50,
+      "sliceName": "ADOC SV - Shopify Fulfillment Status Since Last Day Pie Chart",
+      "uuid": "a2172def-4142-44d3-95d8-472c9672c0bd",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "TABS-Vl0GtqqodR",
+      "TAB-sZmQ_LtJ78",
+      "ROW-8HifYaC_3m"
+    ],
+    "type": "CHART"
+  },
+  "CHART-NMPoqxzl6R": {
+    "children": [],
+    "id": "CHART-NMPoqxzl6R",
+    "meta": {
+      "chartId": 4146,
+      "height": 50,
+      "sliceName": "ADOC SV - Store Daily Orders Fulfillment Report",
+      "uuid": "b1312506-82e7-4859-9b4f-a259f84d9509",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "ROW-yOfO6jT0PY"
+    ],
+    "type": "CHART"
+  },
+  "CHART-OKKrbx4lAG": {
+    "children": [],
+    "id": "CHART-OKKrbx4lAG",
+    "meta": {
+      "chartId": 4152,
+      "height": 50,
+      "sliceName": "ADOC CR - Shopify Fulfillment Status All time Line Chart",
+      "uuid": "c8b22967-6231-4fc2-8eaf-6eca0b81594c",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "TABS-ESmOFDa0f",
+      "TAB-AWXwW0Wi7p",
+      "ROW-LNARDbXKh9"
+    ],
+    "type": "CHART"
+  },
+  "CHART-OpuBt4c7sQ": {
+    "children": [],
+    "id": "CHART-OpuBt4c7sQ",
+    "meta": {
+      "chartId": 4190,
+      "height": 50,
+      "sliceName": "ADOC NI - Cancelled Orders Report",
+      "uuid": "826d9869-263c-4d57-9ab2-2907f42f574d",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "ROW-l1hUdld1lw"
+    ],
+    "type": "CHART"
+  },
+  "CHART-PJnU20U6wI": {
+    "children": [],
+    "id": "CHART-PJnU20U6wI",
+    "meta": {
+      "chartId": 4121,
+      "height": 60,
+      "sliceName": "ADOC HN - Unreconciled Report",
+      "uuid": "858a64c7-3878-4ae2-92ab-e41d7be6d4c5",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "ROW-0zUY7NmGB"
+    ],
+    "type": "CHART"
+  },
+  "CHART-QpW20HlzGc": {
+    "children": [],
+    "id": "CHART-QpW20HlzGc",
+    "meta": {
+      "chartId": 4186,
+      "height": 50,
+      "sliceName": "ADOC CR - Duplicate Orders",
+      "uuid": "ce27ec78-937d-4c81-866d-694cbd3eb6e5",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "ROW-HTAsSnbYfe"
+    ],
+    "type": "CHART"
+  },
+  "CHART-SHNqOJwMSv": {
+    "children": [],
+    "id": "CHART-SHNqOJwMSv",
+    "meta": {
+      "chartId": 4147,
+      "height": 50,
+      "sliceName": "ADOC SV - Unreconciled Report",
+      "uuid": "b02e4025-8d15-4611-93ee-5b859edf6fcd",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "ROW-6HDdU4j0zm"
+    ],
+    "type": "CHART"
+  },
+  "CHART-Um3nopp44J": {
+    "children": [],
+    "id": "CHART-Um3nopp44J",
+    "meta": {
+      "chartId": 4162,
+      "height": 50,
+      "sliceName": "ADOC NI - Store Rejections with Reason Graph",
+      "uuid": "2f18b6e6-27f8-41c0-8411-57ecef36e02c",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "ROW-RXE-BSwjsx"
+    ],
+    "type": "CHART"
+  },
+  "CHART-Us-whlCod6": {
+    "children": [],
+    "id": "CHART-Us-whlCod6",
+    "meta": {
+      "chartId": 4166,
+      "height": 50,
+      "sliceName": "ADOC NI - Store Daily Orders Fulfillment Report",
+      "uuid": "f650467b-d021-49c9-bd6b-d830e763abdd",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "ROW-M7lGGJXa1B"
+    ],
+    "type": "CHART"
+  },
+  "CHART-Ux60WFgKMc": {
+    "children": [],
+    "id": "CHART-Ux60WFgKMc",
+    "meta": {
+      "chartId": 4132,
+      "height": 50,
+      "sliceName": "ADOC GT - Shopify Fulfillment Status Since Last Day Table",
+      "uuid": "b2a45a2f-28c4-4e50-a1ec-a0755d24f3ef",
+      "width": 12
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "TABS-BOrLJgn2Jg",
+      "TAB-WI1fqxa7S",
+      "ROW-4KrGEqTb9A"
+    ],
+    "type": "CHART"
+  },
+  "CHART-VQ0YCBmfFc": {
+    "children": [],
+    "id": "CHART-VQ0YCBmfFc",
+    "meta": {
+      "chartId": 4193,
+      "height": 50,
+      "sliceName": "ADOC GT - Cancelled Orders Report",
+      "uuid": "a2de85e7-96e7-40b4-a51e-4c02d10927f6",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "ROW-U1JUKheyrO"
+    ],
+    "type": "CHART"
+  },
+  "CHART-XA3bGrOZUT": {
+    "children": [],
+    "id": "CHART-XA3bGrOZUT",
+    "meta": {
+      "chartId": 4125,
+      "height": 60,
+      "sliceName": "ADOC HN - Shipping Performance Report",
+      "uuid": "dfa67cb5-c981-465c-b711-eb55da85ce3c",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "ROW-0zUY7NmGB"
+    ],
+    "type": "CHART"
+  },
+  "CHART-XDGStRxQ4i": {
+    "children": [],
+    "id": "CHART-XDGStRxQ4i",
+    "meta": {
+      "chartId": 4165,
+      "height": 50,
+      "sliceName": "ADOC NI - Shipping Performance Report",
+      "uuid": "fc1c3ab8-8b92-431b-87b6-6cc684b9db53",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "ROW-AaywoyJqa1"
+    ],
+    "type": "CHART"
+  },
+  "CHART-XIBMmnWQ3O": {
+    "children": [],
+    "id": "CHART-XIBMmnWQ3O",
+    "meta": {
+      "chartId": 4154,
+      "height": 50,
+      "sliceName": "ADOC CR - Shopify Fulfillment Status Since Last Day Table",
+      "uuid": "c3abfd91-1751-40e9-9b72-280933bdf53d",
+      "width": 12
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "TABS-ESmOFDa0f",
+      "TAB-wvMAX2b26",
+      "ROW-_s81AXC3N7"
+    ],
+    "type": "CHART"
+  },
+  "CHART-YJqIbAYZm0": {
+    "children": [],
+    "id": "CHART-YJqIbAYZm0",
+    "meta": {
+      "chartId": 4142,
+      "height": 50,
+      "sliceName": "ADOC SV - Rejected Order Items Report",
+      "uuid": "2acbd0da-8673-4c38-a5de-fc5733e401df",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "ROW-mMYJo5Tmig"
+    ],
+    "type": "CHART"
+  },
+  "CHART-ZydnMGYMa0": {
+    "children": [],
+    "id": "CHART-ZydnMGYMa0",
+    "meta": {
+      "chartId": 4118,
+      "height": 60,
+      "sliceName": "ADOC HN - Rejected Order Items Report",
+      "uuid": "3fee2e3e-36e0-44c3-9947-5ebbbbcce96c",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "ROW-rAQQ4UDiL"
+    ],
+    "type": "CHART"
+  },
+  "CHART-cQqefLHCE_": {
+    "children": [],
+    "id": "CHART-cQqefLHCE_",
+    "meta": {
+      "chartId": 4157,
+      "height": 50,
+      "sliceName": "ADOC CR - Unreconciled Report",
+      "uuid": "ccd2d30d-7211-4c12-b079-6e551e186784",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "ROW-9BfLkU1gKH"
+    ],
+    "type": "CHART"
+  },
+  "CHART-ccNYVmxj3g": {
+    "children": [],
+    "id": "CHART-ccNYVmxj3g",
+    "meta": {
+      "chartId": 4130,
+      "height": 50,
+      "sliceName": "ADOC GT - Store Rejections with Reason Graph",
+      "uuid": "fe4663ae-3907-420c-920f-63a91a10d2fa",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "ROW-Nx_ZeAydW2"
+    ],
+    "type": "CHART"
+  },
+  "CHART-e0GZbe3sVJ": {
+    "children": [],
+    "id": "CHART-e0GZbe3sVJ",
+    "meta": {
+      "chartId": 4245,
+      "height": 50,
+      "sliceName": "Adoc CR -  Facility fill rate report",
+      "uuid": "4cea26c3-6255-4db4-be95-74807629b41a",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "ROW-n3yxHuLfyC"
+    ],
+    "type": "CHART"
+  },
+  "CHART-eOaS5k5cul": {
+    "children": [],
+    "id": "CHART-eOaS5k5cul",
+    "meta": {
+      "chartId": 4176,
+      "height": 50,
+      "sliceName": "ADOC SV - Duplicate Orders",
+      "uuid": "95af2ec3-eeaf-4a1f-afa1-0c24c34a326e",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "ROW-yOfO6jT0PY"
+    ],
+    "type": "CHART"
+  },
+  "CHART-fABOqLiUB4": {
+    "children": [],
+    "id": "CHART-fABOqLiUB4",
+    "meta": {
+      "chartId": 4140,
+      "height": 50,
+      "sliceName": "ADOC SV - Shopify Fulfillment Status Since Last Day Table",
+      "uuid": "2f9a4cb6-7f1a-44d8-8b36-579a00bb653e",
+      "width": 12
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "TABS-Vl0GtqqodR",
+      "TAB-4hl77S9Mj",
+      "ROW-7RWsgE45Ze"
+    ],
+    "type": "CHART"
+  },
+  "CHART-fWDUh9w1Jy": {
+    "children": [],
+    "id": "CHART-fWDUh9w1Jy",
+    "meta": {
+      "chartId": 4161,
+      "height": 50,
+      "sliceName": "ADOC NI - Rejected Order Items Report",
+      "uuid": "ec9e67f7-6dbf-49eb-aedd-889a4d9b0828",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "ROW-RXE-BSwjsx"
+    ],
+    "type": "CHART"
+  },
+  "CHART-gyRuDu6I9q": {
+    "children": [],
+    "id": "CHART-gyRuDu6I9q",
+    "meta": {
+      "chartId": 4127,
+      "height": 64,
+      "sliceName": "ADOC HN - Store Daily Orders Fulfillment Report",
+      "uuid": "9d2e5bd5-4c0f-4ffe-bde3-e45613671076",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "ROW-PZ7RvkQpy"
+    ],
+    "type": "CHART"
+  },
+  "CHART-lvxI4iBbpD": {
+    "children": [],
+    "id": "CHART-lvxI4iBbpD",
+    "meta": {
+      "chartId": 4135,
+      "height": 50,
+      "sliceName": "ADOC GT - Rejected Order Items Report",
+      "uuid": "a0a9fbcf-6e52-48cf-b05b-afadd16e0e8a",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "ROW-Nx_ZeAydW2"
+    ],
+    "type": "CHART"
+  },
+  "CHART-m3ZGOkZlXK": {
+    "children": [],
+    "id": "CHART-m3ZGOkZlXK",
+    "meta": {
+      "chartId": 4158,
+      "height": 50,
+      "sliceName": "ADOC NI - Shopify Fulfillment Status All time Line Chart",
+      "uuid": "6c55645f-86fe-4bb6-b752-ed31fb946ced",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "TABS-o5QfKorjKr",
+      "TAB-6aeEXLfW_T",
+      "ROW-028JmGlbG"
+    ],
+    "type": "CHART"
+  },
+  "CHART-mKmGQb8rfJ": {
+    "children": [],
+    "id": "CHART-mKmGQb8rfJ",
+    "meta": {
+      "chartId": 4153,
+      "height": 50,
+      "sliceName": "ADOC CR - Shopify Fulfillment Status Since Last Day Pie Chart",
+      "uuid": "42907be4-4a77-42c8-bd49-f23199083703",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "TABS-ESmOFDa0f",
+      "TAB-AWXwW0Wi7p",
+      "ROW-LNARDbXKh9"
+    ],
+    "type": "CHART"
+  },
+  "CHART-mnm70GUjOG": {
+    "children": [],
+    "id": "CHART-mnm70GUjOG",
+    "meta": {
+      "chartId": 4151,
+      "height": 50,
+      "sliceName": "ADOC CR - Shipping Performance Report",
+      "uuid": "87b2a3de-6cdc-4961-8ae7-7344cc1e7396",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "ROW-9BfLkU1gKH"
+    ],
+    "type": "CHART"
+  },
+  "CHART-oAR8R2rCyY": {
+    "children": [],
+    "id": "CHART-oAR8R2rCyY",
+    "meta": {
+      "chartId": 4192,
+      "height": 50,
+      "sliceName": "ADOC CR - Cancelled Orders Report",
+      "uuid": "a87edc12-5b63-4535-8b68-dd608377af2b",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "ROW-n3yxHuLfyC"
+    ],
+    "type": "CHART"
+  },
+  "CHART-owNO_U64BS": {
+    "children": [],
+    "id": "CHART-owNO_U64BS",
+    "meta": {
+      "chartId": 4138,
+      "height": 50,
+      "sliceName": "ADOC SV - Shopify Fulfillment Status All time Line Chart",
+      "uuid": "2cfe34a1-6fa0-41cb-bbe4-dc68dca1eb47",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "TABS-Vl0GtqqodR",
+      "TAB-sZmQ_LtJ78",
+      "ROW-8HifYaC_3m"
+    ],
+    "type": "CHART"
+  },
+  "CHART-pJ8kowXwn9": {
+    "children": [],
+    "id": "CHART-pJ8kowXwn9",
+    "meta": {
+      "chartId": 4137,
+      "height": 50,
+      "sliceName": "ADOC GT - Shopify Fulfillment Status All time Line Chart",
+      "uuid": "f73c35ed-7b81-40ef-a758-acfb44b55389",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "TABS-BOrLJgn2Jg",
+      "TAB-VooGxxD2oF",
+      "ROW-NwwyRIqlo"
+    ],
+    "type": "CHART"
+  },
+  "CHART-wZbxXlg1NB": {
+    "children": [],
+    "id": "CHART-wZbxXlg1NB",
+    "meta": {
+      "chartId": 4246,
+      "height": 50,
+      "sliceName": "Adoc HN -  Facility fill rate report",
+      "uuid": "dbbc9c5a-eb29-4689-81cd-5fa1a80777a8",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "ROW-0WxMiKCdwM"
+    ],
+    "type": "CHART"
+  },
+  "CHART-xQ5mv48FT-": {
+    "children": [],
+    "id": "CHART-xQ5mv48FT-",
+    "meta": {
+      "chartId": 4184,
+      "height": 50,
+      "sliceName": "ADOC HN - Duplicate Orders",
+      "uuid": "4267b6fe-2e53-4c9b-b2d7-23448a3eef32",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "ROW-PZ7RvkQpy"
+    ],
+    "type": "CHART"
+  },
+  "CHART-yYD6D-cwF1": {
+    "children": [],
+    "id": "CHART-yYD6D-cwF1",
+    "meta": {
+      "chartId": 4189,
+      "height": 50,
+      "sliceName": "ADOC SV - Cancelled Orders Report",
+      "uuid": "8931f792-3221-4eb8-9034-d4bd89d0ff2e",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "ROW-Mtlp2sK51"
+    ],
+    "type": "CHART"
+  },
+  "CHART-z4CXrac3ID": {
+    "children": [],
+    "id": "CHART-z4CXrac3ID",
+    "meta": {
+      "chartId": 4160,
+      "height": 50,
+      "sliceName": "ADOC NI - Shopify Fulfillment Status Since Last Day Table",
+      "uuid": "7ae5db51-37a3-4636-b22e-15f3b013b886",
+      "width": 12
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "TABS-o5QfKorjKr",
+      "TAB-RksQMh4W9",
+      "ROW-cl2WY2gYF7"
+    ],
+    "type": "CHART"
+  },
+  "CHART-zTgI3KF0Tq": {
+    "children": [],
+    "id": "CHART-zTgI3KF0Tq",
+    "meta": {
+      "chartId": 4134,
+      "height": 50,
+      "sliceName": "ADOC GT - Unreconciled Report",
+      "uuid": "5ad2f43e-76b9-4eb2-a200-95a263c5fdf3",
+      "width": 6
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "ROW-mI3Y2dOoYg"
+    ],
+    "type": "CHART"
+  },
+  "DASHBOARD_VERSION_KEY": "v2",
+  "GRID_ID": {
+    "children": ["ROW-LsULZ9-6e", "TABS-ufPfOQcQK9"],
+    "id": "GRID_ID",
+    "parents": ["ROOT_ID"],
+    "type": "GRID"
+  },
+  "HEADER_ID": {
+    "id": "HEADER_ID",
+    "meta": { "text": "ADOC - Fulfillment" },
+    "type": "HEADER"
+  },
+  "MARKDOWN-NRtIyVsgKX": {
+    "children": [],
+    "id": "MARKDOWN-NRtIyVsgKX",
+    "meta": {
+      "code": "<h3 align=\"center\"> Shopify Fulfillment Status </h3>\n<p align=\"center\"> The following charts displays if the items that are marked fulfilled in HotWax are also marked Shopify or not </p>",
+      "height": 11,
+      "width": 12
+    },
+    "parents": ["ROOT_ID", "GRID_ID", "ROW-LsULZ9-6e"],
+    "type": "MARKDOWN"
+  },
+  "ROOT_ID": { "children": ["GRID_ID"], "id": "ROOT_ID", "type": "ROOT" },
+  "ROW-028JmGlbG": {
+    "children": ["CHART-0IjNyQzZ4e", "CHART-m3ZGOkZlXK"],
+    "id": "ROW-028JmGlbG",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "TABS-o5QfKorjKr",
+      "TAB-6aeEXLfW_T"
+    ],
+    "type": "ROW"
+  },
+  "ROW-0WxMiKCdwM": {
+    "children": ["CHART-BymHh6n-Ie", "CHART-wZbxXlg1NB"],
+    "id": "ROW-0WxMiKCdwM",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-SqepmAvvMD"],
+    "type": "ROW"
+  },
+  "ROW-0z583kaWE": {
+    "children": ["CHART-3xSvj3rlIE", "CHART-JPeU9KNJE7"],
+    "id": "ROW-0z583kaWE",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "TABS-Be-svHIFUW",
+      "TAB-0ZPcUDkLRx"
+    ],
+    "type": "ROW"
+  },
+  "ROW-0zUY7NmGB": {
+    "children": ["CHART-PJnU20U6wI", "CHART-XA3bGrOZUT"],
+    "id": "ROW-0zUY7NmGB",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-SqepmAvvMD"],
+    "type": "ROW"
+  },
+  "ROW-4KrGEqTb9A": {
+    "children": ["CHART-Ux60WFgKMc"],
+    "id": "ROW-4KrGEqTb9A",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "TABS-BOrLJgn2Jg",
+      "TAB-WI1fqxa7S"
+    ],
+    "type": "ROW"
+  },
+  "ROW-6HDdU4j0zm": {
+    "children": ["CHART-SHNqOJwMSv", "CHART-InQGrfhd8Q"],
+    "id": "ROW-6HDdU4j0zm",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-oiwxHR668"],
+    "type": "ROW"
+  },
+  "ROW-7RWsgE45Ze": {
+    "children": ["CHART-fABOqLiUB4"],
+    "id": "ROW-7RWsgE45Ze",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "TABS-Vl0GtqqodR",
+      "TAB-4hl77S9Mj"
+    ],
+    "type": "ROW"
+  },
+  "ROW-8HifYaC_3m": {
+    "children": ["CHART-MXGqTMRV5K", "CHART-owNO_U64BS"],
+    "id": "ROW-8HifYaC_3m",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "TABS-Vl0GtqqodR",
+      "TAB-sZmQ_LtJ78"
+    ],
+    "type": "ROW"
+  },
+  "ROW-9BfLkU1gKH": {
+    "children": ["CHART-cQqefLHCE_", "CHART-mnm70GUjOG"],
+    "id": "ROW-9BfLkU1gKH",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-PKyKOoZME"],
+    "type": "ROW"
+  },
+  "ROW-AaywoyJqa1": {
+    "children": ["CHART-BEI160X0Em", "CHART-XDGStRxQ4i"],
+    "id": "ROW-AaywoyJqa1",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-kiUAk3M9K"],
+    "type": "ROW"
+  },
+  "ROW-E29njJ4CHg": {
+    "children": ["CHART-EzYOmp2uuV", "CHART-7qwOnICMpI"],
+    "id": "ROW-E29njJ4CHg",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-PKyKOoZME"],
+    "type": "ROW"
+  },
+  "ROW-ED4VWTxmT": {
+    "children": ["CHART-B7w2vV8m8L", "CHART-BanuSf82fJ"],
+    "id": "ROW-ED4VWTxmT",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-2IB0Mmbii"],
+    "type": "ROW"
+  },
+  "ROW-HTAsSnbYfe": {
+    "children": ["CHART-7OG_m1dM-F", "CHART-QpW20HlzGc"],
+    "id": "ROW-HTAsSnbYfe",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-PKyKOoZME"],
+    "type": "ROW"
+  },
+  "ROW-LNARDbXKh9": {
+    "children": ["CHART-mKmGQb8rfJ", "CHART-OKKrbx4lAG"],
+    "id": "ROW-LNARDbXKh9",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "TABS-ESmOFDa0f",
+      "TAB-AWXwW0Wi7p"
+    ],
+    "type": "ROW"
+  },
+  "ROW-LsULZ9-6e": {
+    "children": ["MARKDOWN-NRtIyVsgKX"],
+    "id": "ROW-LsULZ9-6e",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID"],
+    "type": "ROW"
+  },
+  "ROW-M7lGGJXa1B": {
+    "children": ["CHART-Us-whlCod6", "CHART-1qdYwlPuUW"],
+    "id": "ROW-M7lGGJXa1B",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-kiUAk3M9K"],
+    "type": "ROW"
+  },
+  "ROW-Mtlp2sK51": {
+    "children": ["CHART-yYD6D-cwF1", "CHART-ARgF2Np-EE"],
+    "id": "ROW-Mtlp2sK51",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-oiwxHR668"],
+    "type": "ROW"
+  },
+  "ROW-NwwyRIqlo": {
+    "children": ["CHART-5tWiKu-58m", "CHART-pJ8kowXwn9"],
+    "id": "ROW-NwwyRIqlo",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "TABS-BOrLJgn2Jg",
+      "TAB-VooGxxD2oF"
+    ],
+    "type": "ROW"
+  },
+  "ROW-Nx_ZeAydW2": {
+    "children": ["CHART-lvxI4iBbpD", "CHART-ccNYVmxj3g"],
+    "id": "ROW-Nx_ZeAydW2",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-2IB0Mmbii"],
+    "type": "ROW"
+  },
+  "ROW-PZ7RvkQpy": {
+    "children": ["CHART-gyRuDu6I9q", "CHART-xQ5mv48FT-"],
+    "id": "ROW-PZ7RvkQpy",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-SqepmAvvMD"],
+    "type": "ROW"
+  },
+  "ROW-RXE-BSwjsx": {
+    "children": ["CHART-fWDUh9w1Jy", "CHART-Um3nopp44J"],
+    "id": "ROW-RXE-BSwjsx",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-kiUAk3M9K"],
+    "type": "ROW"
+  },
+  "ROW-U1JUKheyrO": {
+    "children": ["CHART-VQ0YCBmfFc", "CHART-A62jTdYO9S"],
+    "id": "ROW-U1JUKheyrO",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-2IB0Mmbii"],
+    "type": "ROW"
+  },
+  "ROW-_s81AXC3N7": {
+    "children": ["CHART-XIBMmnWQ3O"],
+    "id": "ROW-_s81AXC3N7",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "TABS-ESmOFDa0f",
+      "TAB-wvMAX2b26"
+    ],
+    "type": "ROW"
+  },
+  "ROW-cl2WY2gYF7": {
+    "children": ["CHART-z4CXrac3ID"],
+    "id": "ROW-cl2WY2gYF7",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "TABS-o5QfKorjKr",
+      "TAB-RksQMh4W9"
+    ],
+    "type": "ROW"
+  },
+  "ROW-l1hUdld1lw": {
+    "children": ["CHART-OpuBt4c7sQ", "CHART-LHTpY-DBnZ"],
+    "id": "ROW-l1hUdld1lw",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-kiUAk3M9K"],
+    "type": "ROW"
+  },
+  "ROW-mI3Y2dOoYg": {
+    "children": ["CHART-zTgI3KF0Tq", "CHART-8-2_4jMacV"],
+    "id": "ROW-mI3Y2dOoYg",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-2IB0Mmbii"],
+    "type": "ROW"
+  },
+  "ROW-mMYJo5Tmig": {
+    "children": ["CHART-YJqIbAYZm0", "CHART--wVTKUZP8g"],
+    "id": "ROW-mMYJo5Tmig",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-oiwxHR668"],
+    "type": "ROW"
+  },
+  "ROW-n3yxHuLfyC": {
+    "children": ["CHART-oAR8R2rCyY", "CHART-e0GZbe3sVJ"],
+    "id": "ROW-n3yxHuLfyC",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-PKyKOoZME"],
+    "type": "ROW"
+  },
+  "ROW-rAQQ4UDiL": {
+    "children": ["CHART-ZydnMGYMa0", "CHART-DTYQxuLm-j"],
+    "id": "ROW-rAQQ4UDiL",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-SqepmAvvMD"],
+    "type": "ROW"
+  },
+  "ROW-yOfO6jT0PY": {
+    "children": ["CHART-NMPoqxzl6R", "CHART-eOaS5k5cul"],
+    "id": "ROW-yOfO6jT0PY",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-oiwxHR668"],
+    "type": "ROW"
+  },
+  "ROW-yxepw78Vc": {
+    "children": ["CHART-6sqNKKxiiQ"],
+    "id": "ROW-yxepw78Vc",
+    "meta": { "background": "BACKGROUND_TRANSPARENT" },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "TABS-Be-svHIFUW",
+      "TAB-v9X8uK5kw"
+    ],
+    "type": "ROW"
+  },
+  "TAB-0ZPcUDkLRx": {
+    "children": ["ROW-0z583kaWE"],
+    "id": "TAB-0ZPcUDkLRx",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "Pie-Charts"
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "TABS-Be-svHIFUW"
+    ],
+    "type": "TAB"
+  },
+  "TAB-2IB0Mmbii": {
+    "children": [
+      "TABS-BOrLJgn2Jg",
+      "ROW-Nx_ZeAydW2",
+      "ROW-mI3Y2dOoYg",
+      "ROW-ED4VWTxmT",
+      "ROW-U1JUKheyrO"
+    ],
+    "id": "TAB-2IB0Mmbii",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "ADOC GT"
+    },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9"],
+    "type": "TAB"
+  },
+  "TAB-4hl77S9Mj": {
+    "children": ["ROW-7RWsgE45Ze"],
+    "id": "TAB-4hl77S9Mj",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "Details"
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "TABS-Vl0GtqqodR"
+    ],
+    "type": "TAB"
+  },
+  "TAB-6aeEXLfW_T": {
+    "children": ["ROW-028JmGlbG"],
+    "id": "TAB-6aeEXLfW_T",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "Pie-Charts"
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "TABS-o5QfKorjKr"
+    ],
+    "type": "TAB"
+  },
+  "TAB-AWXwW0Wi7p": {
+    "children": ["ROW-LNARDbXKh9"],
+    "id": "TAB-AWXwW0Wi7p",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "Pie-Charts"
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "TABS-ESmOFDa0f"
+    ],
+    "type": "TAB"
+  },
+  "TAB-PKyKOoZME": {
+    "children": [
+      "TABS-ESmOFDa0f",
+      "ROW-E29njJ4CHg",
+      "ROW-9BfLkU1gKH",
+      "ROW-HTAsSnbYfe",
+      "ROW-n3yxHuLfyC"
+    ],
+    "id": "TAB-PKyKOoZME",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "ADOC CR"
+    },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9"],
+    "type": "TAB"
+  },
+  "TAB-RksQMh4W9": {
+    "children": ["ROW-cl2WY2gYF7"],
+    "id": "TAB-RksQMh4W9",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "Details"
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-kiUAk3M9K",
+      "TABS-o5QfKorjKr"
+    ],
+    "type": "TAB"
+  },
+  "TAB-SqepmAvvMD": {
+    "children": [
+      "TABS-Be-svHIFUW",
+      "ROW-rAQQ4UDiL",
+      "ROW-0zUY7NmGB",
+      "ROW-PZ7RvkQpy",
+      "ROW-0WxMiKCdwM"
+    ],
+    "id": "TAB-SqepmAvvMD",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "ADOC HN"
+    },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9"],
+    "type": "TAB"
+  },
+  "TAB-VooGxxD2oF": {
+    "children": ["ROW-NwwyRIqlo"],
+    "id": "TAB-VooGxxD2oF",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "Pie-Charts"
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "TABS-BOrLJgn2Jg"
+    ],
+    "type": "TAB"
+  },
+  "TAB-WI1fqxa7S": {
+    "children": ["ROW-4KrGEqTb9A"],
+    "id": "TAB-WI1fqxa7S",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "Details"
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-2IB0Mmbii",
+      "TABS-BOrLJgn2Jg"
+    ],
+    "type": "TAB"
+  },
+  "TAB-kiUAk3M9K": {
+    "children": [
+      "TABS-o5QfKorjKr",
+      "ROW-RXE-BSwjsx",
+      "ROW-AaywoyJqa1",
+      "ROW-M7lGGJXa1B",
+      "ROW-l1hUdld1lw"
+    ],
+    "id": "TAB-kiUAk3M9K",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "ADOC NI"
+    },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9"],
+    "type": "TAB"
+  },
+  "TAB-oiwxHR668": {
+    "children": [
+      "TABS-Vl0GtqqodR",
+      "ROW-mMYJo5Tmig",
+      "ROW-6HDdU4j0zm",
+      "ROW-yOfO6jT0PY",
+      "ROW-Mtlp2sK51"
+    ],
+    "id": "TAB-oiwxHR668",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "ADOC SV"
+    },
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9"],
+    "type": "TAB"
+  },
+  "TAB-sZmQ_LtJ78": {
+    "children": ["ROW-8HifYaC_3m"],
+    "id": "TAB-sZmQ_LtJ78",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "Pie-Charts"
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-oiwxHR668",
+      "TABS-Vl0GtqqodR"
+    ],
+    "type": "TAB"
+  },
+  "TAB-v9X8uK5kw": {
+    "children": ["ROW-yxepw78Vc"],
+    "id": "TAB-v9X8uK5kw",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "Details"
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-SqepmAvvMD",
+      "TABS-Be-svHIFUW"
+    ],
+    "type": "TAB"
+  },
+  "TAB-wvMAX2b26": {
+    "children": ["ROW-_s81AXC3N7"],
+    "id": "TAB-wvMAX2b26",
+    "meta": {
+      "defaultText": "Tab title",
+      "placeholder": "Tab title",
+      "text": "Details"
+    },
+    "parents": [
+      "ROOT_ID",
+      "GRID_ID",
+      "TABS-ufPfOQcQK9",
+      "TAB-PKyKOoZME",
+      "TABS-ESmOFDa0f"
+    ],
+    "type": "TAB"
+  },
+  "TABS-BOrLJgn2Jg": {
+    "children": ["TAB-VooGxxD2oF", "TAB-WI1fqxa7S"],
+    "id": "TABS-BOrLJgn2Jg",
+    "meta": {},
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-2IB0Mmbii"],
+    "type": "TABS"
+  },
+  "TABS-Be-svHIFUW": {
+    "children": ["TAB-0ZPcUDkLRx", "TAB-v9X8uK5kw"],
+    "id": "TABS-Be-svHIFUW",
+    "meta": {},
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-SqepmAvvMD"],
+    "type": "TABS"
+  },
+  "TABS-ESmOFDa0f": {
+    "children": ["TAB-AWXwW0Wi7p", "TAB-wvMAX2b26"],
+    "id": "TABS-ESmOFDa0f",
+    "meta": {},
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-PKyKOoZME"],
+    "type": "TABS"
+  },
+  "TABS-Vl0GtqqodR": {
+    "children": ["TAB-sZmQ_LtJ78", "TAB-4hl77S9Mj"],
+    "id": "TABS-Vl0GtqqodR",
+    "meta": {},
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-oiwxHR668"],
+    "type": "TABS"
+  },
+  "TABS-o5QfKorjKr": {
+    "children": ["TAB-6aeEXLfW_T", "TAB-RksQMh4W9"],
+    "id": "TABS-o5QfKorjKr",
+    "meta": {},
+    "parents": ["ROOT_ID", "GRID_ID", "TABS-ufPfOQcQK9", "TAB-kiUAk3M9K"],
+    "type": "TABS"
+  },
+  "TABS-ufPfOQcQK9": {
+    "children": [
+      "TAB-2IB0Mmbii",
+      "TAB-oiwxHR668",
+      "TAB-kiUAk3M9K",
+      "TAB-SqepmAvvMD",
+      "TAB-PKyKOoZME"
+    ],
+    "id": "TABS-ufPfOQcQK9",
+    "meta": {},
+    "parents": ["ROOT_ID", "GRID_ID"],
+    "type": "TABS"
+  }
+}

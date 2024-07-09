@@ -1,0 +1,69 @@
+      <fieldType name="string_ci" class="solr.SortableTextField" uninvertible="false" docValues="true" positionIncrementGap="100">
+      <analyzer>
+          <tokenizer class="solr.KeywordTokenizerFactory"/>
+          <filter class="solr.LowerCaseFilterFactory"/>
+          <filter class="solr.WordDelimiterGraphFilterFactory" splitOnCaseChange="1" generateWordParts="1" catenateWords="1"
+                  splitOnNumerics="0" generateNumberParts="1" catenateNumbers="1"
+                  catenateAll="0" preserveOriginal="1" stemEnglishPossessive="1" />
+      </analyzer>
+      </fieldType>
+      
+
+
+1. Uploaded Configset with some new changes , It will cause to drop all fields uploaded with api
+
+removed string_ci -> drop all fields ->but not touched te indexes.
+
+- refreshsolr need as we upload configset the schema dropped : true
+- on every upload of configset ,Schema losed and we need to call refreshSolr : Confirmed (by indenting just only and without any changes just uploading again)
+- modification of existing fields and removing a field needs the : indexing
+- reflected in all collections : true
+
+
+2023-11-27 17:02:19,840 |jsse-nio-8443-exec-8 |SearchServices                |E| [Search] Error in createProductIndex Error from server at http://localhost:8983/solr/local-enterpriseSearch: Exception writing document id PRODUCT-_NA_ to the index; possible analysis error: cannot change field "productId" from index options=DOCS_AND_FREQS_AND_POSITIONS to inconsistent index options=DOCS
+
+2023-11-27 17:02:20,028 |OFBiz-JobQueue-0     |ShopifyShopServices           |E| [Search] Error in createStoreIndex Error from server at http://localhost:8983/solr/local-enterpriseSearch: Exception writing document id STORE-STORE_4 to the index; possible analysis error: cannot change field "storeCode" from index options=DOCS_AND_FREQS_AND_POSITIONS to inconsistent index options=DOCS
+
+
+
+      <fieldType name="string_ci" class="solr.SortableTextField" uninvertible="false" docValues="true" positionIncrementGap="100">
+      <analyzer>
+          <tokenizer class="solr.KeywordTokenizerFactory"/>
+          <filter class="solr.LowerCaseFilterFactory"/>
+          <filter class="solr.WordDelimiterGraphFilterFactory" splitOnCaseChange="1" generateWordParts="1" catenateWords="1"
+                  splitOnNumerics="0" generateNumberParts="1" catenateNumbers="1"
+                  catenateAll="0" preserveOriginal="1" stemEnglishPossessive="1" />
+      </analyzer>
+      </fieldType>
+	
+	<fieldType name="string_ci" class="solr.SortableTextField" uninvertible="false" docValues="true" positionIncrementGap="100">
+      <analyzer>
+          <tokenizer class="solr.KeywordTokenizerFactory"/>
+          <filter class="solr.LowerCaseFilterFactory"/>
+          <filter class="solr.WordDelimiterGraphFilterFactory" splitOnCaseChange="1" generateWordParts="1" catenateWords="1"
+                  splitOnNumerics="0" generateNumberParts="1" catenateNumbers="1"
+                  catenateAll="0" preserveOriginal="1" stemEnglishPossessive="1" />
+      </analyzer>
+      </fieldType>
+
+
+checkCoreStatusParamMap.put("coreInfo", "false");
+
+[stateFormat:2, znodeVersion:4, properties:[autoAddReplicas:false, maxShardsPerNode:1, nrtReplicas:1, pullReplicas:0, replicationFactor:1, router:[name:compositeId], tlogReplicas:0], activeShards:1, inactiveShards:0, schemaNonCompliant:[(NONE)], shards:[shard1:[state:active, range:80000000-7fffffff, replicas:[total:1, active:1, down:0, recovering:0, recovery_failed:0], leader:[coreNode:core_node2, core:local-enterpriseSearch_shard1_replica_n1, node_name:127.0.1.1:8983_solr, base_url:http://127.0.1.1:8983/solr, state:active, type:NRT, force_set_state:false, leader:true, segInfos:[info:[commitLuceneVersion:8.11.2, numSegments:0, segmentsFileName:segments_1, totalMaxDoc:0, userData:[:]]]]]]] 
+
+
+
+if (SearchUtil.isSolrCloudEnable(delegator)) {
+                if (UtilValidate.isNotEmpty(responseMap.get(coreName))) {
+                    coreInfo = UtilGenerics.cast(responseMap.get(coreName));
+                    coreExists = true;
+                }
+            } else {
+                if (UtilValidate.isNotEmpty(responseMap.get("status"))) {
+                    Map<String, Object> coreStatus = UtilGenerics.cast(responseMap.get("status"));
+                    if (UtilValidate.isNotEmpty(coreStatus.get(coreName))) {
+                        coreInfo = UtilGenerics.cast(coreStatus.get(coreName));
+                        coreExists = true;
+                    }
+                }
+            }

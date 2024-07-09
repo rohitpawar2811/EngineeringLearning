@@ -1,0 +1,10 @@
+## Setup-Solr-DBDriver
+
+## install the python
+sudo apt-get update
+sudo apt-get install python3-venv
+
+# activate the virtual environment
+python3 -m venv venv
+pip install -r requirements/test.txt
+

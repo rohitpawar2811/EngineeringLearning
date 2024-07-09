@@ -1,0 +1,737 @@
+## Data Enginnering
+
+1. https://eponkratova.medium.com/airflow-is-not-an-etl-tool-bfa82d20f31e
+2. https://medium.com/@esdraslimasilva83/working-with-csv-and-nifi-febc942c7d60
+
+
+
+
+## **Experienced Data Engineer** 
+
+with a demonstrated history of working in the information technology and services industry in Media, Retail and Banking Domains. Skilled in Data Integrity, Data Integration, Data Migration, Data Cleansing, MS SQL Server,Oracle Database, Teradata, Green Plum, Data lake, Azure Data Factory, ETL, Data Warehousing, Microsoft Excel, Unix, Python, SSIS, Power BI.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# SPARK
+# SQL
+# AZURE
+# Notes Share: 
+
+
+Azure Devops Document:
+
+https://docs.copado.com/articles/#!copado-ci-cd-publication/azure-dev-ops-integration-setup/a/h2__401195429
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Meddelian Architecture for curating an efficent data pipline
+
+It has been partitioned in 3 parts : 
+1. Browns : Raw integration data
+2. Sliver : Filtered, Cleaned, Augmented 
+3. Gold : Business level Aggregates.
+
+https://www.linkedin.com/pulse/why-medallion-architecture-just-works-especially-case-bharadwaj/?trackingId=0HjDUiPjf%2Fb4rRUa0YY31g%3D%3D
+
+https://www.linkedin.com/in/saikiran-pinapathruni-a0243569/
+
+
+I can Depict that same work, which is currently going on 
+
+Hotwax Commerce Analytics Platform:
+
+- Building a Data Lake for Hotwax-Commerce client for self-sufficent data pipeline.
+- Analyzed all reports of clients requirements and needed data and prepared Fact and dimensional tables.
+- Build ETL flows from scratch which involves Read-Replica of client transactional AWS RDS, Transformation, streaming at real-time to facts table.
+- Tech stack involved: streaming, transformation.
+
+
+
+ 
+HotWax OReSA: Financial Reconciliations:
+◦ Employed Azure Data Factory for orchestrating and transporting data seamlessly across heterogeneous sources.
+◦ Reconcile sales and return orders between Shopify and Hotwax OMS for consistent data alignment.
+◦ Efficiently store diverse data from multiple origins in a Cassandra database.
+◦ Integrate Superset dashboard to visualize comprehensive sales, returns, and inventory metrics.
+◦ Generate missing reports using SQL queries to augment decision-making insights.
+◦ Automated reconciliation process for daily, weekly and monthly reconciliation of sales and returns.
+◦ Implement alerts and notifications for discrepancies in the reconciliation process to ensure prompt resolution.
+
+
+
+- Designing and Developing Oracle PLSQL to load various Fact and dimension for Service Assurance , Service Delivery ,Sales , Billing Facts 
+
+
+
+Azure Data Factory : data-integration and transformation
+Cassandra database :
+Sql Queries : 
+Apache Spark : Implemented data processing and transformations using Apache Spark to ensure seamless compatibility between
+systems.
+
+#Shopify, Netsuite, Hotwax-Commerce, POS
+------------------------------------------------------------------------------------------------------  
+    
+ ## About   
+ Experienced in implementing Big Data /Data Lake ,MDM and BI/Data Warehouse solutions to global majors in Telecom and Retail domains. 
+• Experience as Big Data Solution Architect implementing solution in Azure and AWS.
+• Experience in providing solutions for Data engineering & Analytical technologies.
+o Azure Cloud: - Azure Data Factory, Snowflake Datawarehouse, Blob Storage, ADLS, Databricks (Spark Framework, Pyspark, SparkSQL), Tableau/Power BI Reporting 
+o AWS-EMR (Pyspark, SparkSQL Hive), Lambda functions, Step functions, AWS Glue, Redshift Data Warehouse, Quick Sight, Tableau 
+• Oracle Technologies: - Oracle Analytical Cloud, Oracle Transaction Business Intelligence, Autonomous Data Warehouse Cloud, Oracle BI Applications, Informatica 9.x, BI Applications 7.8.x (DAC, Informatica, OBIEE), ODI 11.x ,Oracle MDM ,Oracle EDQ cloud and Informactica MDM 9.4
+
+
+Rate Limiting API :
+
+1. In case of Request-based limits : It is applied by the Rest-Admin-API.
+
+2. Calculated query costs: GraphQL API
+
+
+---------------------------------------------------------------------------------
+
+same app -> different store , rate limiting does not affect the different store while hit 1st store.
+
+Similarly, calls to one store don't affect the rate limits of another store, even from the same app.
+
+App + Store -> gets allocated the certain buket size for complex api call hits.
+You can get more by API and plan tier.
+
+A single query may not exceed a cost of 1,000 points, regardless of plan limits. This limit is enforced before a query is executed based on the query’s requested cost.
+
+
+Input arguments that accept an array have a maximum size of 250. Queries and mutations return an error if an input array exceeds 250 items.
+
+eyJhbGciOiJSUzI1NiIsImtpZCI6ImZySjlpeG1VR3YzckZ2cVBCdnVveXI4c2lDZ29xazJqRFpzRnVjVjZQMkEifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6Imt1YmVhcHBzLW9wZXJhdG9yLXRva2VuIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6Imt1YmVhcHBzLW9wZXJhdG9yIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiYTc1NGYyOTAtMzQzOS00MjEwLWFhMTktYjM2ZjIwZWQwM2UzIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OmRlZmF1bHQ6a3ViZWFwcHMtb3BlcmF0b3IifQ.nYgDwkDjv4TR0Z_92fuaLVYsSedcj44LsI7xXXOoawHzZNtBou8RqS0e4uGFjHNqONczJVKKN3OR_lrW2Jh97wQdLXX-4UId2hpx5XOvF8HLnYoPastQt5B7PNlwDPdhvj2wMam89y5AfzcSsotg2Nwf9jR9Ol71_aEPoaDTiDZsjo82jp3mCWxU-ElgMr6f_bZHNQadJ2-OowHeX1LUCGTBhT0i_5ZCPrzdiwR0TGBvdpqGeH1J9bcY4HIhCnwTPC6x8IMmViplmDmpHjHdiCHYP9IoOYmuSJIGkX8t9VpuNeAKFMjkPkM97mpPCYM4A1YPM0yvShEx2KYtKAyrxg
+
+
+Error 422 (Unprocessable Entity) in response to
+
+
+keyvalue pair generator created. 
+Rsa Builder-> with public key and a private key 
+JWKSource Builder 
+JWT Decoder public key builder.
+JWT Encoder needed
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Part 4-1
+
+# GROUP BY ROLL UP 
+
+IT IS USED TO FIND THE TOTAL SUM, SUM BY YEAR WITHOUT USING CROSS JOIN,
+
+SELECT COUNT(EMP.DID), DEP.DID, DEP.NAME FROM EMPLOYEE AS EMP INNER JOIN DEPARTMENT AS DEP ON EMP.DID = DEP.DID GROUP BY DEP.DID WITH ROLLUP;
+
+- Here we can use mutiple EMP.DID `With ROLLUP`. 
+
+The GROUP BY clause in MYSQL is like grouping the candies in the box. It helps to summarise the data by grouping rows together based on the values in one or more columns. 
+
+The ROLLUP modifier is like adding an extra row to the output, which represents the total of all the groups. So it will show you the total number of candies in the box by creating an extra row.
+
+
+## View in SQL:
+
+It create a virtual table which reflects the single or combination of table via Joins. whenever the orignal table
+
+
+Create view emp_view As 
+Select DeptID, AVG(salary),
+from Employee
+group by deptID;
+
+select * from emp_view;
+drop view emp_view;
+
+- No pysical table is create behind the scene
+- No extra memory is consumed for that.
+- It is just an alias name providing to entire query logic. whenever we execute throw view_name whole logic is exected again.
+- We can be able to run insert/delete on view. only create/drop.
+
+- The view has just virtual existence, it always featches data from original table. Because of that it will always provide you most up to date data.
+
+## Materialized views : It comes with postgrease database engine and redshift. It is freqently asked questions in the interview If you have worked on views.
+
+
+## All VS Any and Exists Vs Non Exists and In Vs Not In
+
+1. Find the students who enrolled in any course taken by 'john' any one 
+
+Courses -> courseid, coursename
+Enrollments -> stuid, courseid
+Student -> studid, name
+
+
+select distinct (stu.name)  
+from student inner join enrollment as enroll on stu.studid = enroll.stuid    
+where enroll.courseid Any
+	( select enroll.coursename 
+	from student as stu inner join enrollment as enroll on stu.studid = enroll.stuid  
+	where stu.name ='john')
+
+
+(select enroll.coursename 
+from student as stu inner join enrollment as enroll on stu.studid = enroll.stuid  
+inner join courses as cour on enroll.courseid = cour.courseid
+where stu.name ='john')
+
+select name 
+from student where student.course 
+
+
+2. we want to find the product that have a price less than the price of all list of product ordered in order id 1001.
+
+1. from order 1001 we have to find the productId that can be multiple as 1 order can contains the multiple orderItems from diffrent product.
+
+2. second we would write an upper query to iterate over all product and check 
+any (select courses from student where name = 'john');
+
+3. There is another approach by extracting min max from the product price.
+
+
+## Exists Vs Join opration
+
+--> Customer please at least one order
+
+Yes we just want to check the 1st order exits then discard/stop further processing.
+
+Here Exits operation helps you on top of that. That will return the boolean expration, when it gets first match simply return ans by stoping further scanning on other side.  
+
+
+select customer from cust where cust In (
+select ord.customers from order
+)
+
+select c.cutomerName 
+from customers c 
+where EXISTS (
+	select o.orderID
+	from Orders o
+	where o.CustomerID = c.CustomerID
+)
+
+select c.cutomerName 
+from customers c 
+where EXISTS (
+	select o.orderID
+	from Orders o
+	where o.CustomerID = c.CustomerID
+)
+- Exists is optimal than In and Not In 
+- Not Exists at worest case scan whole table. but In ideal senerio as you identify something exists or notexists. it will stop scaning ans out the result.
+
+
+from date with pk
+
+Lookup operation and exits operation 
+
+## Window function in SQL
+
+Window functions apply to aggregate and ranking functions over a particular window (set of rows). OVER clause is used with window functions to define that window. OVER clause does two things : 
+
+- Partitions rows to form a set of rows. (PARTITION BY clause is used) 
+- Orders rows within those partitions into a particular order. (ORDER BY clause is used) 
+Note: If partitions aren’t done, then ORDER BY orders all rows of the table. 
+
+
+- partition by 
+- over clause: It is used to define the window and used with window function
+- window_function : sum, max, count
+
+-In group by we would loose the information inside the chunk, but by using window function. we would get all rows with windows function calculations. 
+
+SELECT coulmn_name1, 
+ window_function(cloumn_name2)
+ OVER([PARTITION BY column_name1] [ORDER BY column_name3]) AS new_column
+FROM table_name;
+
+
+## Aggregate window functions: 
+
+There are various aggregate function such as count, Avg, sum, max, min applied over a window are called aggregate window functions.
+
+Over -> we are using window funtions
+Partition by -> defines the column based on which windows used, If not mentioned it will consider whole table as its window ans it will calculate the result for all window data.
+
+
+1. It is used to just calculate the window sum
+select * sum(sales_amount) over(partition by shop_id) as total_sum_of_sales
+from shop_sales_data
+
+
+## Aggregate Rank function
+Rank , DenseRank, RowNumber
+
+## Running sum/ Cummulative Sum also we can caluculate
+
+
+From interview point of view it is most important
+Question like 
+1. Calculate running sum weekly 
+2. Calculate running avarage daily 
+
+Here window function use-case comes which helps you to showcase all weeks group calculation with 
+           Running sum
+1 week 500 500 
+2 week 200 600
+3 week 600 1200
+
+In Running sum needs ordering of your data mostly it is on some kind dates always.
+So first you are arranging your data on some specific order and then calculating based on that. It is called runnig sum/avg/count.
+
+1 oct   2  	2
+2 oct	5	7
+3 oct   8	15
+4 oct   9	24
+5 oct   10	34
+
+2.  When ever we talk about the running sum order by is must. whenever we put order by it is instantly start calculating the running min, avg, sum, count
+
+select *, sum(sales amount) over(order by sales_date) as running_sum_of_sales
+from shop_sales_date
+
+select *, sum(sales amount) over(order by sales_amount) as running_sum_of_sales
+from shop_sales_date
+// On same sales_amount it will provide the last running sum for all.
+*****In case of duplicated order by value It will assigned same values which is last calulated.***
+
+- scope full
+- over we mention
+- Here we are not mentiong partition by then the calculation scope is whole table.
+
+## 3. Partition by and orderby simultaneously
+
+partition by shop id
+order by sales amount
+
+select * , sum(sales_amount) over(partition by shop_id order by sales_amount) from running_sum_with_partition_by_shop_id;
+
+- Here It first Make the partitions and after that for each partitions it will calculate the running sum for each window because of order by clause .
+- if order by was not there then on each partition the window function calculate the result.
+
+
+
+select * , sum(sales_amount) over(partition by shop_id order by sales_amount) as running_sum_with_partition_by_shop_id ,
+min(sales_amount) over(partition by shop_id order by sales_amount) as running_min_with_partition_by_shop_id,
+max(sales_amount) over(partition by shop_id order by sales_amount) as running_max_with_partition_by_shop_id,
+from shop_data;
+
+
+# calculate the date wise rolling average of amazon sales data.
+
+create table amazon_sales_data(
+	sales_date date,
+	sales amount int
+);
+
+insert into amazon_sales_data values ('2022-08-21', 500);
+insert into amazon_sales_data values ('2022-08-22', 600);
+insert into amazon_sales_data values ('2022-08-19', 300);
+
+select * avg(sales_amount) over(order by sales_date) as rolling_average_of_salesData 
+from amazon_sales_data
+
+
+
+## I wanted to find top 3 salary in amoung of all students.
+
+Different Types of window functions 
+
+There are 3 main categories of window functions in SQL : 
+1. Ranking function: ROW_NUMBER(), DENSE_RANK(), RANK()
+2. Value function
+3. Aggregate function
+
+
+Rank functions are not the aggregated rank function thats why we would not mention any columns to the rank functions
+
+1. Row_Number() : Assigns a unique row number to each row, ranking start from 1 ans keep increasing till the end of the last row.
+
+select *, ROW_NUMBER() OVER(ORDER BY Marks desc) as row_number
+from exam_result
+
+3. DENSE_RANK()
+
+It just provide ranking without any skip/gap and duplicate records get the same rank. The difference between Rank and dense_rank() is that Rank avoid duplicated ranking and dense rank will continue after duplicate rank as is.
+
+Time execution is more than rank() function. but it persist relative ranking. Mostly used when we care about all data rankings.
+
+---without partition whole table is window
+10	1
+15	2
+20	3
+20	3
+20	3
+70	4
+70	4
+61	5
+
+select *, row_number() over(partition by shop_id order by sales_amount desc) as row_number
+	, rank() over(partition by shop_id order by sales_amount desc) as rank_val,
+	, dense_rank() over(partion by shop_id order by sales_amount desc) as dense_rank
+from shop_sales_data;
+
+
+## Question: Get the top 3 salary employee from each department.
+## Question: get the top 1 salary employee from each department.
+
+select tem.*
+from (
+ select *, dense_rank() over(partition by department order by empsalary) as dense from emloyee
+ ) as temp
+ where dense = 1
+ 
+ 
+## Question Get the top 2 ranked employee from each department who are getting maximum salary.
+
+select tem.*
+from (
+ select *, dense_rank() over(partition by department order by empsalary) as dense from emloyee
+ ) as temp
+ where dense <=2;
+ 
+-----------------------------------------------------------------------------------------------------------
+# VALUE FUNCTIONS : THESE FUNCTION PERFORM CALCULATION ON THE VALUES OF THE WINDOW ROWS.
+
+I need the employees who had least hour works from each department.
+
+
+```
+WITH RankedEmployees AS (
+    SELECT
+        department_id,
+        employee_id,
+        employee_name,
+        work_hours,
+        RANK() OVER (PARTITION BY department_id ORDER BY work_hours ASC) AS rank
+    FROM employees
+)
+SELECT
+    department_id,
+    employee_id,
+    employee_name,
+    work_hours
+FROM RankedEmployees
+WHERE rank = 1;
+
+```
+
+```
+SELECT e.department_id, e.employee_id, e.employee_name, e.work_hours
+FROM employees e
+INNER JOIN (
+    SELECT department_id, MIN(work_hours) AS min_work_hours
+    FROM employees
+    GROUP BY department_id
+) AS min_hours ON e.department_id = min_hours.department_id AND e.work_hours = min_hours.min_work_hours;
+
+```
+## 1. FIRST_VALUES()
+
+- FIRST_VALUES() : RETURN THE FIRST VALUE IN THE WINDOW
+- we can't provide multiple values in first_values column.
+- can we have multiple values of least hours yes then we have to go with ranking.
+
+SELECT employee_name, department, hours , 
+first_value(employee_name) over (partition by department order by hours ) least_over_time 
+from overtime
+
+## 2. Last_Values()
+
+
+SELECT employee_name, department, hours , 
+last_value(employee_name) over (partition by department order by hours ) least_over_time 
+from overtime
+
+## 3. Leg window function
+Lag(): Return the values of the previous row, genrally used in case of comparitions.
+
+
+It is generally used for those question in which some kind of diffrence is needed to saw between earlier and current values.
+
+# Question : we want the daily sales difference.
+
+Here we window is whole table
+
+```
+select *, lag(sales_amount,1) over(order by sales_date) as pre_day_sales
+from daily_sales;
+
+```
+
+```
+Select 
+	Year, 
+	Quarter,
+	Sales,
+	Lag(sales, 1, 0) Over(
+		Partion by Year
+		Order by year, Quarter ASC
+	) 
+```
+
+2017 500 0   -> in mysql this 0 comes as null 
+1016 600 500
+1010 900 600
+
+
+So values generated because of lag we can set either by using itself lag function or Coalesce function.
+
+lag(col, row_num_byWhichYouhavetoLag, default_value);
+
+## 4.) Coalesce Function
+
+The SQL Server COALESCE() function is used to handle NULL values. The NULL values are replaced with the user-given value during the expression value evaluation process.
+
+It can take as many as parmeters whatever is not equall to null replaced on left-hand side value.
+
+The MySQL COALESCE() function returns the first non-null value in a list of expressions.
+Coalesce(val1, val2, val3 ...)
+
+coalesce(Null, 1,2,3) -> 1
+coalesce (NULL, NULL , 3) -> 3
+
+
+
+---------------------------------------------------------------------------------
+
+# QUERY : caluculate the diffrence of sales with previous day sales 
+# here null will be derived
+
+select sales_date,
+	sales_amount as curr_day_sales,
+	lag(sales_amount, 1) over(order by sales_date) as prev_day_sales,
+	sales_amount - lag(sales_amount, 1) over( order by  sales_date) as sales_diff
+from daily_sales;
+
+<--- Without null values here--->
+
+select sales_date,
+	sales_amount as curr_day_sales,
+	lag(sales_amount, 1 ,0 ) over(order by sales_date) as prev_day_sales,
+	sales_amount - lag(sales_amount, 1, 0) over( order by  sales_date) as sales_diff
+from daily_sales;
+
+## Lead: Return the values in the next row on upward direction.
+
+Just same syntex as of leg function
+- default values supported.
+- no_of_rows_to_shift.
+
+## Frame clauese : Uber
+
+Without Frame clauses you can't utilize the window fucntion in better and in efficent way.
+IMP : rows clause always use with order by clause inside the over() func of window.
+
+ 
+## Question : weekly sum and weekly running average
+
+The frame defines the calculation ranges by using these 5 predefind keywords. 
+
+1. n preceding 
+2. n following 
+3. unbounded preceding : consider all rows in the upward direction.
+4. unbounded following : consider all rows in the downward direction.
+5. current row
+
+
+//3-rows 
+
+select * ,
+sum(sales_amount) over(order by sales_date rows between 1 preceding and 1 following)
+as prev_plus_next_sales_sum_with_current
+from daily_sales;
+
+
+- If there is nothing in nothing in the upword direction then it would consider as 0 and continuing calulating other values.
+
+
+//2-rows 
+
+select * ,
+sum(sales_amount) over(order by sales_date rows between 1 preceding and current row)
+as prev_plus_next_sales_sum_with_current
+from daily_sales;
+
+
+//4-rows 
+
+select * ,
+sum(sales_amount) over(order by sales_date rows between 2 preceding and 1 following)
+as prev_plus_next_sales_sum_with_current
+from daily_sales;
+
+
+//unlimited-upward-rows 
+
+select * ,
+sum(sales_amount) over(order by sales_date rows between unbounded preceding and current row)
+as prev_plus_next_sales_sum_with_current
+from daily_sales;
+
+
+Question: how would running some works. without the rows or frame thing it should have to calulate the running some or commulative sum
+
+
+## I think it would calculate the sum of all sales_amount on each row simply : yes its correct answer
+
+select *,
+sum(sales_amount) over(order by sales_amount rows between unbounded preceding and unbounded following) as full_window_calc
+from daily_sales
+
+Question:
+## Now I want to caluculate the sum of those sales amount with current current whose diffrence is something x between cur-up <=x and another diffrence is y in downwords cur-down <= y
+
+
+select *,
+sum(sales_amount) over(order by sales_amount rows between 100 preceding and 200 following) as prev_diff100_and_next_diff200
+from daily_sales;
+
+
+As the data is sorted according to the sales_amount so whenever the diffrence got high then it just publish the result. Because it does not make sense check further the diff is always high.
+
+
+
+## What if I would Have to calculate the running sum for a week.
+
+1st Way : You would took an assumption that from current_row you just took last 6 rows. But here you would go wrong as the data would be jumbeled, there is for some date data is missing.
+
+2nd way : You have to go with diffrence like above we have check diffrence in the sales_amount now we would check the difference in dates with <= 6 that will give us the correct solution of the question.
+
+select *, sum(sales_amount) over(order by sales_date rows between 6 days and current row) as past1_week_running_sum
+from daily_sales;
+
+
+--> This Query would calculate the difference and check if it is less than 6 days then it will count that row in and sumup_sales_amount.  
+-----------------------------------------------------------------------------------------------
+
+## Common Table Expressions (Pre-Calculated-Result or Common-table data)
+
+There is most of the times you wanted to use/utilize precalulated result mutiple times thats what we can achieve Here with
+
+There are 2 types: 
+1. Iterative 
+2. Recursive
+
+
+#1
+--> Write a query to print the name of department along with the total salary paid in each department.
+--> Normal approach
+
+select d.dept_name, tmp.total_salary 
+from (select dep_id, sum(salary) as totaly_salary from amazon_employee group by employee group by dept_id ) as temp 
+inner join department d on tem.dept_id = d.dept_id;
+
+
+
+WITH, With_RECURSIVE 
+
+
+with dept_wise_salary as (select dept_id, sum(salary) as total_salary
+ from amazon_employee group by dept_id
+)
+
+select d.dept_name, tem.total_salary
+from dept_wise_salary temp
+inner join department d on tem.dept_id = d.dept_id
+
+#2 ICTE CTE expression together
+
+
+with deptwisesalary as(select depet_id, sum(salary) as total_salary
+from amazon_employee group by dept_id),
+dep_wise_max_salary as (select dept_id , max(salary) as max_salary 
+from amazon_employee group by dept_id
+)
+
+select * from dept_wise_max_salary
+
+
+Disadvantage: 
+
+1. It will store the execution result inside the memory untill the execution would not finished.
+2. compromizing only in the memory part, making execution to way faster by storing query result.
+3. With vs view : View in sql each time execute query to original tables whenever we would use or how many time we use it always executes. Instead in CTE(With caluse) It just store the result at the time of execution of query, so that we would not have to recompute the result.
+
+
+
+## RECURSIVE CTE
+
+Simply recurtion means we would calling function inside a function again and again that's we call the recursive execution.
+
+
+
+
+-> If we have to simply print the counting
+select 1 union select 2 union select 3 union select 4 union select 5
+
+-> optimized using recursive cte
+
+with recursive generate_numbers as 
+{
+	select 1 as n
+	union 
+	select n+1 from generate_numbers where n<10 
+}
+
+select * from generate_numbers 
+
+## Real world data example where you must have to use the recusive CTE otherwise you would not be able to solve heriarhical dataset problem.
+
+ceo -> cto ->d -> manager -> salesman
+    -> cfo
+    -> chr
+
+create table emp_mgr(
+id int,
+name varchar(50),
+manager_id int,  
+designation varchar(50),
+primary key(id)
+);
+
+manager_id is the id of that emp who is meaning current one. It might happen that manger_id one is manged by another employee. 
+
+
+with recursive find_all_emp{
+select id as uid from emp_mgr where lowercase(name) ='asha'
+union
+select id as uid from emp_mgr where id in (select id from find_all_emp);
+}
+
+1. anchore query: It runs only one and provide the inital data
+2. termination condition which gives null data, so that execution terminated at that point.
+3. While using union column must be same in both query anchore+recursive-query
+
+
+with recursive emp_hir as (
+
+select id, name, manager_id, designation, 1 as lvl from emp_mgr where name='Asha'
+
+Union
+
+select em.id, em.name, em.manager_id, em.designation, eh.lvl +1 as lvl from em_hire eh
+inner join emp_mgr em on eh.id = em.manager_id
+
+)
+
+Union will join the data each time 
+
+- Here recursive query whatever the data is returned each time is store in emp_hir.
+
+
+store procedure +pl/sql those are useless you would not have need to learn for the job in DataEngineering.
+-------------------------------------------------------------------------------------------------------------------------------------
+
+## What I have done in DataEnginneering
+
+1. SQL
+2. Azure Data Factory
+3. Kafka
+4. Apache Spark
+5. Apache Aiflow.
+

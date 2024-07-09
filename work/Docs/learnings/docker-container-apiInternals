@@ -1,0 +1,9 @@
+# Docker-API Internals
+
+Docker is using different container runtime which container-io , and the kubernetes is using cri-io as runtime , so images pulled by kubernets would not be visible in the docker
+so I have to use
+sudo crictl images
+
+when you mean 'show up on the VM' do you mean by running 'docker image ls' ? if so, that's probably because kubernetes is using a different container driver. Docker is only one way of interacting with containers, it's the most famous and real hardcore container linux people hate docker because docker is a company and it has its own agenda. I think kubernetes is using CRI-O as the default container runtime now, try running crictl images to see the images that kubernetes pulls
+
+https://stackoverflow.com/questions/69981852/how-to-use-local-docker-images-in-kubernetes-deployments-not-minikube

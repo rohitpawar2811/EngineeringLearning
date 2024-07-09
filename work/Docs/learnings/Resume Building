@@ -1,0 +1,370 @@
+Hotwax OMS: 
+
+- Integrated Azure-Saml-Single-Sign-On at Steve-Madden OMS apps using APIs and also gives the flexibility to assign permission directly from azure-side, delivered single handed and take it to production
+
+- Migrated Solr standalone services and api to Solr-cloud and with including backward compatibility.
+
+- Integrated Central Logout Mechanism as there are variety of commerce apps which is used by clients, and as we provided sso support so Central Logout Mechanism must be Integrated.
+
+- Embedded Superset Dashboards in Oms, as there is security concern in direct exposing of production superset.
+
+- Implemented api for Proxy superset request, which is previously directly communicated throw Solr, but now superset connects with OMS and oms API proxy that requests to preferred solr, advantage security enhancement, we don't have to expose solr on superset.
+
+- Design Apache Solr schema for monitoring the import product jobs which is a batch job , but because of some misconfiguration some products are not imported so we would index in collection logs-insights and query on that from superset which provides real-time dashboarding of non-imported products
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hotwax OMS Achievements:
+
+- Successfully integrated Azure-SAML-Single-Sign-On into Steve-Madden OMS applications via APIs, providing the added flexibility of assigning permissions directly from the Azure side. Executed the integration independently and ensured its seamless transition to production.
+
+- Led the migration of Solr standalone services and APIs to Solr-cloud, incorporating backward compatibility to make sure old things not break and ensured its performance and scalability.
+
+- Implemented a Central Logout Mechanism to address the diverse array of commerce applications used by clients. This mechanism seamlessly integrates with the Single Sign-On support, offering a unified solution for secure user logout.
+
+- Implemented code to Embed the Apache superset Dashboard in HotwaxOMS, while doing so make sure about superset-permission, about different brands.This strategic measure safeguards sensitive production Superset data from direct exposure.
+
+- Developed proxy API Superset requests, re-routing communication from Solr to OMS. This enhanced security by eliminating the need to expose Solr directly on Superset. The updated architecture ensures a more secure and efficient communication flow.
+
+- Designed the Apache Solr schema to monitor the import progress of product batch jobs. Recognizing the challenges posed by misconfigurations that hindered product imports, the solution involved indexing in the "logs-insights" collection. Leveraging Superset, real-time dashboards were created to track and visualize non-imported products, providing valuable insights for prompt issue resolution.
+
+- Researched and Implemented Multi-Instance Environment setup from one place. which make it easy to push the images on remote location and deploy the application on docker using docker api and same Aws Ec2. Totatly It make easy deployments for BA.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+ECR, EC2
+ETL
+Jenkins
+Pipline Automation
+Airflow 
+Superset
+GITLAB
+
+- Bug
+- Debug
+- Drools
+- DUO
+- MultiInstance: Nginx, Docker, Moqui
+- Solr-cloud
+- Nifi: ETL, Solr-Indexing, API exposing here
+- SSL: Keytool, Certs, Pem , Ssl Auth, skey , asynckey,increption and decreption face while handshaking, authorized signed cert
+- Superset : many internal taks are here, kubernetes, scalable model , configuration, redis, celery, 
+- Apache Hazelcaset: in moqui for running.
+- Automating Deployment Process by using Jenkins and bash-script.
+- ETL Tasks : NIFI
+- Azure-SSO: Pec4j framework,Azure,How the totally this saml thing is working, relaystate, 
+- SameSite/Cross Orign  problem faced while doing and solved by doing something.
+-CORS
+- Central-Logout: framework-level and then SSO level
+- Drools task 
+- Embedded Dashboard : Switchboard-ui which make this possible cross-domain communication and also here is involvement of web-worker api also
+- Upgrading Solr to Solr-cloud: solr, schmaless schema, diffrent data-types, managed-schema, configsets, ttl expiration,cloud-api, security-enabling throw security.json, configset uploading, Schema API.
+- Proxy Solr as we are directly exposing solr to superset.
+- Embeded Dashboard Implementation : leads to superset api, token mechnism overall flow figuring out how things I have to take up.
+- AWS: ECR, EC2, CDN.
+
+Optimized Apache Solr in product operations, encompassing research, issue resolution, and a seamless upgrade to Version 9, resolving search-speed concerns
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+- Hotwax OMS: Contributed to the development of Hotwax OMS.
+• Hotwax Tathya: Contributed to the development of Hotwax Tathya.
+• Hotwax Fulfillment: Contributed to the development of Hotwax Fulfillment
+
+ETL using nifi,
+Airflow Python
+jenkins gitlab
+AWS ECR, EC2, CDN, 
+
+
+I am writing to express my interest in the Software Engineer position at Hotwax. I am committed to contributing my dedication to your organization for the long term. In my previous roles at Hotwax, I achieved consistent results, showcasing my commitment and unique skills.
+
+I am enthusiastic about bringing my expertise in work. My passion for IT industry and commitment make me a strong fit for your dynamic team. I am impressed by Company values, and I am confident in my ability to make meaningful contributions.
+
+Enclosed is my resume for your consideration. I am eager to discuss how my skills align with the needs of Company.
+
+Thank you for considering my application. I look forward to the possibility of contributing to Your success.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+## Interview Preparation
+
+https://auth0.com/blog/how-saml-authentication-works/
+
+1. Buisness Architecture
+2. Azure-SSO
+3. Central-Logout
+4. Solr-Schema-Design
+5. Moqui-Multi-Instance : Nginx proxy-server,Docker-api,ECS,EKS Aws Api used here
+6. Multi-Tenante
+
+And other items are There
+ Superset,Nifi,Api,Code-level things
+
+
+
+ 23:01:52.724 ERROR   MoquiJob-2                  o.moqui.i.a.XmlAction Error running groovy script (java.lang.IllegalStateException: No password or KeyProvider specified, cannot connect to sftp_user@localhost:22): 
+
+
+
+java.lang.IllegalStateException: No password or KeyProvider specified, cannot connect to sftp_user@localhost:22
+        at org.moqui.sftp.SftpClient.connect(SftpClient.groovy:103) ~[moqui-sftp-1.0.1.jar:?]
+        at org_moqui_sftp_SftpMessageServices_poll_SystemMessageSftp.run(org_moqui_sftp_SftpMessageServices_poll_SystemMessageSftp:49) ~[?:?]
+        at org.moqui.impl.actions.XmlAction.run(XmlAction.java:67) ~[moqui_temp17257717610666371600WEB-INF_lib_moqui-framework-3.1.0-rc2.jar.:3.1.0-rc2]
+        at org.moqui.impl.service.runner.InlineServiceRunner.runService(InlineServiceRunner.java:59) ~[moqui_temp17257717610666371600WEB-INF_lib_moqui-framework-3.1.0-rc2.jar.:3.1.0-rc2]
+        at org.moqui.impl.service.ServiceCallSyncImpl.callSingle(ServiceCallSyncImpl.java:322) ~[moqui_temp17257717610666371600WEB-INF_lib_moqui-framework-3.1.0-rc2.jar.:3.1.0-rc2]
+        at org.moqui.impl.service.ServiceCallSyncImpl.call(ServiceCallSyncImpl.java:125) ~[moqui_temp17257717610666371600WEB-INF_lib_moqui-framework-3.1.0-rc2.jar.:3.1.0-rc2]
+        at org.moqui.impl.service.ServiceCallJobImpl$ServiceJobCallable.call(ServiceCallJobImpl.groovy:244) [moqui_temp17257717610666371600WEB-INF_lib_moqui-framework-3.1.0-rc2.jar.:3.1.0-rc2]
+        at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+        at java.lang.Thread.run(Thread.java:829) [?:?]
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Naukari.com Profile Building
+
+1. API design and implementation for brokering, order.
+
+2. Integration with third-party tools and applications like shipping, payment.
+
+3. Integration with Azure-SAML 2.0, Okta-Auth0.
+
+4. Upgrading search Apache Solr to cloud mode with compliant security implications.
+
+5. Provides a feature for Shopify users to look at postal-code while placing BOPIS(BUY ONLINE PICKUP IN-STORE ) order.
+
+6. Introduced Apache Superset for BI and reporting set practices, and led to production.
+
+7. Automated the deployment process by utilizing GitLab API, GitLab CI/CD, Bash scripts, Aws.
+
+8. Automated the data migration tasks through ETL involving Apache NiFi, API, Aws.
+
+9. Automated processes involved in retailers' omnichannel systems, providing support by conducting thorough requirement gathering.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+# HR Call Round
+
+1. Is it good time to talk about it?
+
+Yes sure, I am available right now we can talk.
+
+2. Are you aware of Solution Enginner role ?
+
+Yes I am aware of solution enginner role, I have to support and team and collabarate with team as solution engineer, and as solution enginner I am dealing with the Buisness Process and understood the client-rquirements and based on that I have to build a quality-solution for that.
+
+3. have you know about our company?
+
+Yes slightly I have learned about that they are dealing with supports and integration service for the diffrent variety of the clients.
+
+General Counsels expect workloads to increase by 25% over the next three years — yet 75% of GCs do not anticipate budgets to keep pace. Onit helps corporate legal departments modernize their legal operations so Legal runs like a business.
+
+---------------------------------------------------------------------------------------------
+
+Experience: 2
+Notice period
+currentpackage:
+current-project
+TechStack
+
+-------------------------------------------------------------------------------------------------------------------
+
+**Experienced Data Engineer** with a demonstrated history of working in the information technology and services industry in Media, Retail and Banking Domains. Skilled in Data Integrity, Data Integration, Data Migration, Data Cleansing, MS SQL Server,Oracle Database, Teradata, Green Plum, Data lake, Azure Data Factory, ETL, Data Warehousing, Microsoft Excel, Unix, Python, SSIS, Power BI.
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+Shefali Wagadre
+  2nd degree connection2nd
+Human Resource Manager at Card91
+
+# Company to apply
+1. globant
+2. Accolite
+3. A.P. Moller - Maersk
+4. Broadridge
+5. PayPal
+6. Card91
+
+
+# Reach out to linkedin via naukari.com searching
+
+Devops 
+Software-Engineer
+
+There is no concerns about check
+Learn both things it will give you a edge over industry and Devops is quite demanding field whose requirement never ends
+By date and Position and tech apply something on 50 company each day
+
+You, Sat 5:14 PM
+https://www.hirist.tech/similar_jobs.php?id=1343241&status=single&success=11&pref=ln
+
+You, Sun 1:07 PM, Edited
+Kyndryl : anjna.kumari@kyndryl.com
+
+You, Sun 2:02 PM, Edited
+Java Backend Developer : ESSENWARE PRIVATE LIMITED
+
+Mandatory skills : 
+ 
+- Hands on Experience on Java backend technologies
+- Hands on Experience on Spring boot, Microservices, RestAPI and Hibernate
+- Only 3 years plus relevent profiles are considered
+
+https://candidateportal.ceipal.com/jobs/job_description/R2llTElhaDFNVWFhYjlTbTRKY2pBUT09#.job_boards.LinkedIn
+https://paypal.eightfold.ai/careers?pid=274900351160&location=India&recommended=1&show_multiple=false#apply
+https://www.pega.com/job-application-thank-you?thank_you=YTVlY2ZjNjItMDI3My00MmRiLWE2OTktZjZmNDg1YzUzOTM1
+https://career44.sapsf.com/portalcareer?_s.crb=Tvo45CkK7KwjntReccIb8jzIqMm61uLH1NWZkR786Cw%253d
+
+https://careers.ice.com/jobs/7319?mode=apply&iis=LinkedIn&iisn=Linkedin&lang=en-us : Visa
+https://jobs.ubs.com/TGnewUI/ApplyWithPreLoad?partnerid=25008&siteid=5012&bruid=%5EZP7sA48qGaSboLLasuSw%2FvmQ76gkjExV1GBllbXS5CY%3D&reqid=298073&localeid=&tqid=1907&aipid=0&pageid=0&noback=&ShowNewPolicy=False&wftype=4#Applypage
+
+https://careers.mastercard.com/us/en/applythankyou?status=success&jobSeqNo=MASRUSR222297EXTERNALENUS&jobTitle=Software%20Engineer%20II%20-%20Java%20BackEnd%20Developer&jobId=R-222297&candidateHomeUrl=https://mastercard.wd1.myworkdayjobs.com/en-US/CorporateCareers/login?Job_Application_ID=JOB_APPLICATION-3-8941158&jobApplicationId=JOB_APPLICATION-3-8941158&candidateId=CANDIDATE-3-4698804
+
+https://db.wd3.myworkdayjobs.com/en-US/DBWebsite/userHome : Duchman
+
+https://www.globallogic.com/career-thank-you/ : GlobalLogic
+
+https://www.linkedin.com/in/rutuja-nikum-588a2116b/
+
+Globant -> Buget was not sufficent.
+capillary technologies HR
+@ MakeMyTrip
+@BNY
+Kartik Mehta
+  2nd degree connection2nd
+Lead Full Stack Engineer at BNY Mellon
+Tekion Corp
+
+https://www.linkedin.com/in/ketki-sajan-664828172/
+
+Ekansh Saxena 
+ (He/Him)  1st degree connection1st
+SDE - I @Expedia Group
+
+https://www.linkedin.com/in/ekansh%2Dsaxena%2Da9b163197/
+
+Pega:
+https://www.linkedin.com/in/amit-bansal-11970915/ 
+
+cloud devops
+https://www.linkedin.com/jobs/search/?currentJobId=3949259015&f_C=165426%2C1355388&geoId=92000000&origin=COMPANY_PAGE_JOBS_CLUSTER_EXPANSION
+<!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
+
+## List of All azure / data / devops /ML Interview Q& A
+
+Save & Share.
+
+1. 𝗔𝘇𝘂𝗿𝗲 𝗗𝗮𝘁𝗮 𝗙𝗮𝗰𝘁𝗼𝗿𝘆 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dVzCmzcZ
+
+2. 𝗔𝘇𝘂𝗿𝗲 𝗗𝗮𝘁𝗮𝗯𝗿𝗶𝗰𝗸𝘀 𝗦𝗰𝗲𝗻𝗮𝗿𝗶𝗼 𝗯𝗮𝘀𝗲𝗱 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dUCf8qf8
+
+𝟯. 𝗥𝗲𝗮𝗹𝘁𝗶𝗺𝗲 𝗔𝘇𝘂𝗿𝗲 𝗗𝗮𝘁𝗮 𝗙𝗮𝗰𝘁𝗼𝗿𝘆 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/ex_Vixh
+
+𝟰.𝗟𝗮𝘁𝗲𝘀𝘁 𝗔𝘇𝘂𝗿𝗲 𝗗𝗲𝘃𝗢𝗽𝘀 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/g7PdATm
+
+𝟱. 𝗔𝘇𝘂𝗿𝗲 𝗔𝗰𝘁𝗶𝘃𝗲 𝗗𝗶𝗿𝗲𝗰𝘁𝗼𝗿𝘆 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dtWYXTKN
+
+𝟲. 𝗔𝘇𝘂𝗿𝗲 𝗗𝗮𝘁𝗮 𝗟𝗮𝗸𝗲 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dgr-uGQB
+
+𝟳. 𝗔𝘇𝘂𝗿𝗲 𝗔𝗽𝗽 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dP4Afqkb
+
+𝟴. 𝗔𝘇𝘂𝗿𝗲 𝗗𝗮𝘁𝗮 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dj_m2yeQ
+
+𝟵. 𝗔𝘇𝘂𝗿𝗲 𝗟𝗼𝗴𝗶𝗰 𝗔𝗽𝗽𝘀 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dDtnJe4v
+
+𝟭𝟬. 𝗔𝘇𝘂𝗿𝗲 𝗙𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝘀 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dRWp3HZX
+
+𝟭𝟭. 𝗔𝘇𝘂𝗿𝗲 𝗦𝘆𝗻𝗮𝗽𝘀𝗲 𝗔𝗻𝗮𝗹𝘆𝘁𝗶𝗰𝘀 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dv-HTdeC
+
+𝟭𝟮. 𝗔𝘇𝘂𝗿𝗲 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗹𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dFvFXqKx
+
+𝟭𝟯. 𝗔𝘇𝘂𝗿𝗲 𝗱𝗮𝘁𝗮 𝗳𝗮𝗰𝘁𝗼𝗿𝘆 𝘀𝗰𝗲𝗻𝗮𝗿𝗶𝗼 𝗯𝗮𝘀𝗲𝗱 𝗶𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/ex_Vixh
+
+Follow Deepak Goyal For more Azure Free stuff. List of All azure / data / devops /ML Interview Q& A
+
+Save & Share.
+
+1. 𝗔𝘇𝘂𝗿𝗲 𝗗𝗮𝘁𝗮 𝗙𝗮𝗰𝘁𝗼𝗿𝘆 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dVzCmzcZ
+
+2. 𝗔𝘇𝘂𝗿𝗲 𝗗𝗮𝘁𝗮𝗯𝗿𝗶𝗰𝗸𝘀 𝗦𝗰𝗲𝗻𝗮𝗿𝗶𝗼 𝗯𝗮𝘀𝗲𝗱 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dUCf8qf8
+
+𝟯. 𝗥𝗲𝗮𝗹𝘁𝗶𝗺𝗲 𝗔𝘇𝘂𝗿𝗲 𝗗𝗮𝘁𝗮 𝗙𝗮𝗰𝘁𝗼𝗿𝘆 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/ex_Vixh
+
+𝟰.𝗟𝗮𝘁𝗲𝘀𝘁 𝗔𝘇𝘂𝗿𝗲 𝗗𝗲𝘃𝗢𝗽𝘀 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/g7PdATm
+
+𝟱. 𝗔𝘇𝘂𝗿𝗲 𝗔𝗰𝘁𝗶𝘃𝗲 𝗗𝗶𝗿𝗲𝗰𝘁𝗼𝗿𝘆 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dtWYXTKN
+
+𝟲. 𝗔𝘇𝘂𝗿𝗲 𝗗𝗮𝘁𝗮 𝗟𝗮𝗸𝗲 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dgr-uGQB
+
+𝟳. 𝗔𝘇𝘂𝗿𝗲 𝗔𝗽𝗽 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dP4Afqkb
+
+𝟴. 𝗔𝘇𝘂𝗿𝗲 𝗗𝗮𝘁𝗮 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dj_m2yeQ
+
+𝟵. 𝗔𝘇𝘂𝗿𝗲 𝗟𝗼𝗴𝗶𝗰 𝗔𝗽𝗽𝘀 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dDtnJe4v
+
+𝟭𝟬. 𝗔𝘇𝘂𝗿𝗲 𝗙𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝘀 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dRWp3HZX
+
+𝟭𝟭. 𝗔𝘇𝘂𝗿𝗲 𝗦𝘆𝗻𝗮𝗽𝘀𝗲 𝗔𝗻𝗮𝗹𝘆𝘁𝗶𝗰𝘀 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dv-HTdeC
+
+𝟭𝟮. 𝗔𝘇𝘂𝗿𝗲 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗹𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/dFvFXqKx
+
+𝟭𝟯. 𝗔𝘇𝘂𝗿𝗲 𝗱𝗮𝘁𝗮 𝗳𝗮𝗰𝘁𝗼𝗿𝘆 𝘀𝗰𝗲𝗻𝗮𝗿𝗶𝗼 𝗯𝗮𝘀𝗲𝗱 𝗶𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗤&𝗔
+https://lnkd.in/ex_Vixh
+
+Follow Deepak Goyal Goyal For more Azure Free stuff.
+
+- Load balancing setup
+- Build a automation solution to Build image Release cut, changelog maintains
+- Superset
+- Solr 
+- NIFI setup in production level
+- Kubernetes in production via kubectl and production.
+- Nginx web-server
+- webserver and web-container tomcat and 
+
+
+Data Engineer | Specializing in ETL, Data Transformations, and Cloud Solutions | Python | Spark | AWS | ApacheNiFi
+
+
+ I am interested in opportunities at Intuit. With over 2.5 years of experience as a Software Engineer at Hotwax Commerce, I have expertise in Java, Spring Boot, AWS, and more.
+
+I have successfully led projects like Azure AD SAML 2.0 SSO integration and Apache Solr-based search engine implementation. I am impressed by Intuit’s innovative work and am eager to contribute to your team.
+
+Could you please refer me for any suitable positions at Intuit? My resume is attached for your reference.
+
+Ekansh Saxena 
+ (He/Him)  1st degree connection1st
+SDE - I @Expedia Group
+
+
+https://www.linkedin.com/jobs/search/?currentJobId=3949259015&f_C=165426%2C1355388&geoId=92000000&origin=COMPANY_PAGE_JOBS_CLUSTER_EXPANSION
+
+
+Submission Link : done
+https://intuit.avature.net/DataCompletionRequest?uid=z3jZ1-0glqNKkQQe&pipelineId=2900&emailCampaignId=20
