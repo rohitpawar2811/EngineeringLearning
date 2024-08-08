@@ -235,6 +235,7 @@ Window functions apply to aggregate and ranking functions over a particular wind
 
 - Partitions rows to form a set of rows. (PARTITION BY clause is used) 
 - Orders rows within those partitions into a particular order. (ORDER BY clause is used) 
+
 Note: If partitions aren’t done, then ORDER BY orders all rows of the table. 
 
 
@@ -289,19 +290,20 @@ So first you are arranging your data on some specific order and then calculating
 4 oct   9	24
 5 oct   10	34
 
-2.  When ever we talk about the running sum order by is must. whenever we put order by it is instantly start calculating the running min, avg, sum, count
+2.  When ever we talk about the running sum order by is must. whenever we place order by it is instantly start calculating the running min, avg, sum, count
 
 select *, sum(sales amount) over(order by sales_date) as running_sum_of_sales
 from shop_sales_date
 
 select *, sum(sales amount) over(order by sales_amount) as running_sum_of_sales
 from shop_sales_date
+
 // On same sales_amount it will provide the last running sum for all.
 *****In case of duplicated order by value It will assigned same values which is last calulated.***
 
 - scope full
 - over we mention
-- Here we are not mentiong partition by then the calculation scope is whole table.
+- Here we are not mention `partition by` then the calculation scope is whole table.
 
 ## 3. Partition by and orderby simultaneously
 
@@ -311,7 +313,7 @@ order by sales amount
 select * , sum(sales_amount) over(partition by shop_id order by sales_amount) from running_sum_with_partition_by_shop_id;
 
 - Here It first Make the partitions and after that for each partitions it will calculate the running sum for each window because of order by clause .
-- if order by was not there then on each partition the window function calculate the result.
+- If order by was not there then on each partition the window function calculate the result.
 
 
 
@@ -341,7 +343,7 @@ from amazon_sales_data
 
 Different Types of window functions 
 
-There are 3 main categories of window functions in SQL : 
+There are 3 main categories of window functions in SQL :                                      
 1. Ranking function: ROW_NUMBER(), DENSE_RANK(), RANK()
 2. Value function
 3. Aggregate function
@@ -379,9 +381,9 @@ from shop_sales_data;
 ## Question: Get the top 3 salary employee from each department.
 ## Question: get the top 1 salary employee from each department.
 
-select tem.*
+select temp.*
 from (
- select *, dense_rank() over(partition by department order by empsalary) as dense from emloyee
+ select *, dense_rank() over(partition by department order by empsalary) as dense from employee
  ) as temp
  where dense = 1
  
@@ -451,7 +453,7 @@ from overtime
 Lag(): Return the values of the previous row, genrally used in case of comparitions.
 
 
-It is generally used for those question in which some kind of diffrence is needed to saw between earlier and current values.
+It is generally used for those question in which some kind of difference is needed to saw between earlier and current values.
 
 # Question : we want the daily sales difference.
 
@@ -499,7 +501,7 @@ coalesce (NULL, NULL , 3) -> 3
 
 ---------------------------------------------------------------------------------
 
-# QUERY : caluculate the diffrence of sales with previous day sales 
+# QUERY : caluculate the difference of sales with previous day sales 
 # here null will be derived
 
 select sales_date,
@@ -522,7 +524,7 @@ Just same syntex as of leg function
 - default values supported.
 - no_of_rows_to_shift.
 
-## Frame clauese : Uber
+## Frame clause : Uber
 
 Without Frame clauses you can't utilize the window fucntion in better and in efficent way.
 IMP : rows clause always use with order by clause inside the over() func of window.
@@ -735,3 +737,20 @@ store procedure +pl/sql those are useless you would not have need to learn for t
 4. Apache Spark
 5. Apache Aiflow.
 
+## cracked 3 out of 4 Big 4 Data Engineering interviews in 2023!
+
+These are the Top 5 Most Common SQL Questions I Encountered:
+
+
+1. Total records after joining two tables on all types of joins
+2. Rolling Sum and Nth salary based questions
+3. Lag/Lead based questions e.g., consecutive months of increasing sales or YoY growth
+4. Query to find employees who earn more than their managers
+5. Removing duplicates from a table
+
+
+Key Takeaways:
+- Master window functions and joins
+- Practice medium to hard SQL questions regularly
+
+Getting good at SQL will pay off in the long run! 💪

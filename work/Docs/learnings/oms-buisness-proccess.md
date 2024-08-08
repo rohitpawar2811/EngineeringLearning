@@ -189,55 +189,90 @@ retryShippingLabel -> RateShopping service called here -> AcceptShipment
 
 
  
- 
-
-ShopifyFullfillmentEvents 
-
- try {
-        chain.doFilter(req, resp);
-        
-        } catch (SAMLAuthnInstantException saie) {
-            if (saie.getMessage().toString().equals("Authentication issue instant is too old or in the future")) {
-            
-                Saml2SSOEvent.saml2CheckCentralLogout(req,resp);
-            }
-            else {
-                throw saie;
-            }
-        }
-        
-   
- gatewayRateRequestWrapper -> getShippingRate  
-   
-        
-## With Rollup function :
-        
-- With Rollup:  clause helps in including and working over aggregated data, what chunks we have create we can further apply operation and include into existing set of rows.
-
-- The with rollup option allows you to include extra rows that represent subtotals and grand totals.
+--------------------------------------------------------------------------------------------------------------------------
+## Brokering OrderItemMissing case
+The Error we are talking about order item missing while brokering, It arise in that situation when all other orders are in brokered state and 1 order has to in NA unfillable parking because it is, partial canceled reason it wents to brokering and return from brokering because it is in cancel or rejected state.
 
 
-Like total-cost, totalscore, totalcount.
+## ShopifyWebhookSubscribe
 
-Question: we want the payment of the year per year and per store.
-         
-## Ranking in sql : 
+We subscribe a shopify webhook which triggers whenever there is change in inventory on shopify and update on our side.
+- inventoryLevelUpdateFromShopify : resetInventoryByIdentification(product,facility)
 
-Dense Rank
+## Jobs hourly run for taking sync from the shopify
+- updateOrderItems
+- updateOrderItemsShippingAddress
+- importOrder
+- importShipment
+- importProduct
+- SyncProduct for existings
+- importOrderAttributes
+- importCanceledOrders
 
-
-aditi@786
-
-https://git.hotwax.co/devops/grafana-monitoring/-/tree/develop/setup-documentation?ref_type=heads
-
-There are 3 sections inside setup-documentation
-
-1. Monitoring : It contains the intials information about the setup of monitoring patterns in grafana.
-2. import_export.md : It contains the details about how we would importing the templated in grafana.
-3. monitoring-setup : It contains information about the Local monitoring setup.
-4. setup monitoring for new instances : This contains details about how we can configure the built in alert for new instances in one shot.
+- Brokering
+- Fulfillment
 
 
-ServiceFields={shipToAddress={destinationAddressCountryCode=US, destinationAddressLine1=2198 Riverside Avenue, destinationAddressStateCode=WA, destinationAddressToName=Jake Paul, residentialAddress=true, destinationAddressPostalCode=99201, destinationAddressCity=Paso Robles, destinationAddressLine2=null}, productStoreShipMethId=10000, facilityId=STORE_1, packages=[{packageCode=YOUR_PACKAGING, length=15.000000, width=10.000000, dimensionUnit=in, weight=0.661400, weightUnits=lb, weightUomId=WT_lb, shipmentPackageSeqId=00001, height=5.000000}], shippableTotal=1.000000, userLogin=[GenericEntity:UserLogin][createdStamp,2023-11-21 15:05:42.874(java.sql.Timestamp)][createdTxStamp,2023-11-21 15:05:42.766(java.sql.Timestamp)][currentPassword,$SHA$UyRieCXGA1nZ6v$KYIotRGt-LPjDbqAJiT-VEUiH18(java.lang.String)][disabledBy,null()][disabledDateTime,null()][enabled,Y(java.lang.String)][externalAuthId,null()][hasLoggedOut,N(java.lang.String)][isExternal,null()][isSystem,null()][lastCurrencyUom,null()][lastLocale,en-US(java.lang.String)][lastTimeZone,Asia/Calcutta(java.lang.String)][lastUpdatedStamp,2024-07-02 15:24:46.786(java.sql.Timestamp)][lastUpdatedTxStamp,2024-07-02 15:24:46.779(java.sql.Timestamp)][partyId,HOTWAX_USER(java.lang.String)][passwordHint,null()][requirePasswordChange,N(java.lang.String)][successiveFailedLogins,0(java.lang.Long)][userLdapDn,null()][userLoginId,hotwax.user(java.lang.String)], carrierPartyId=FEDEX, shipmentRouteSegmentId=00001, currencyUomId=null, shipFromAddress={originAddressLine2=null, originAddressStateOrProvinceCode=UT, originAddressToName=null, originAddressCountryCode=US, originAddressCity=Salt Lake City, originAddressPostalCode=84101, originAddressLine1=1110 S 300 W}, shipmentId=10060, totalWeight=0.661400, weightUomId=WT_lb, productStoreId=STORE, shipmentMethodTypeId=STANDARD}
+## Jobs Vs Webhook
 
+Jobs periordically
+Webhook not efficent for bulk.
+
+
+## DataManager Vs SystemMessageRemote
+
+DataManager Configuration are for using export files and process them and currently we would support the csv,xls,json formate , It will simply pick the data from the Sftp and process the data as configured and execute the service mentioned in the data.  DataManagerConfig config handles and store configuration data about different jobs configured.
+
+SystemMessageRemote is simply entity which holds the 3rd party credentials helps manage them.
+
+
+
+# Transfer Orders
+
+- Wharehouse to store 
+- Store to Warehouse
+- Store to Store
+
+shipments are created with shipment_type -> Transfer_Order
+
+## Product-Store
+
+We can configure the product-store how much the Retailers wanted to deal and manging all throw product-store would help in inventory balancing.
+Here Product-Store represents multiple brands 
+
+For each product-store we would associate 
+1. Product-catelog :  A product catalog for the newly created product store needs to be created which defines which product will be sold through the created product store.
+2. ProductStoreCatelog : Association of catelog to product.
+
+3. ProductCategory : Category help manging back-order,pre-order products
+4. ProdCatalogCategory
+Add Default Data
+- In which you can provide the facility which sells that brand 
+
+Locate the facility page in the Warehouse section
+Upload the CSV file for the Facility along with the facility name and location for the WS_STORE product store. You can download the sample CSV to add the data according to the template provided.
+
+These steps create the product store in HotWax Commerce. Ensure facilities that sell products of that brand are linked to the respective store. This association can be accomplished through the following steps:
+- Customers wants to manage differently, or we are doing to maintain invenoty balances
+- Products are connected throw productStore and there is same facility can be attached to multiple productStore because they sell multiple brands.
+
+
+In HotWax Commerce, effective product management involves creating product categories, especially for handling pre-order and backorder products. The following attributes are essential for accurately defining product categories:
+Make sure to customize all product category IDs and names, and consider adding a company name prefix or suffix to the IDs. It's crucial not to alter any type IDs as specified in the note above. This process ensures accurate and tailored product categorization within HotWax Commerce.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+## Logs Configuration
+Level : Which define or introduce the another level : we have to use this to create another level. 
+Debug : Warraper over LogManger for our custom configuration and management.
+log4j.xml : Lib releated and purging and policy management of logs are done here. Here we define what would be the pattern of logs here.
+fetchLogs.groovy file which feches the logs and showcase in the webtool screen.
+
+- We still wanted to add the logs in Error category.
+
+Now I need to check the patterns what if we change this logs what problem would occure
+And error.log file also created 
+
+In fetchLogs.groovy where I have to change fetchLogs.groovy include B
+
+In some isON() things are written what do we do about it.
 

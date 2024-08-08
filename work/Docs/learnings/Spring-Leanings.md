@@ -756,4 +756,322 @@ Trustore : It contains entry of trust-certificate of all other instance which we
 
 Currently in hotwax both keystore and Trustore are both same.
 
--------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
+Jul/12/2024/-------------------------------------------------------------------------------------------------------------------------------
+# Microservice Architecture : 
+
+1. Monolithic Architecture:
+
+- Monlithic Application has single code base with multiple modules.
+- Monlithic Application has divided in Controllers , services, dao , db
+- It may contain the fulfillment, OrderManagement, PaymentManagement modules but they all are part of single jar/ application that's why we are saying it monlithic architecture.
+- Even if can deploy this apllication on multiple server, We can't say the microservice architecture. Because they are not communicating with each other and even we are not able to get feature like scalability, manitanability, reliability, flexibility, customizable scalable, working with diffrent language (language agnostic architecture) according to need.
+
+Disadvantage:
+What is the disadvantage 
+- As Project Scale, it becomes difficult to manages.
+- For single change redeployment of whole application needed. If we took example of amazone think about how much time does it took redeploy whole amazone application.
+-Difficult to adapt new technology for single functionality. Not impossible but it makes complez to incorporate both programmaing language to work in same monolith env in m1 java, m2 python.
+
+
+Advantage:
+
+- simple to develop
+- simple to build and develop.
+- problem of network latency are relatively less. because monolith contains modules in same application same server instead in microservices they are on different server so latency delay it is expected and optimized by using right/fast protocol. 
+
+
+2. Microservice Archtecture
+
+- Microservices are the small services that work togethere. Here difference is that in monolith those service that are working as coupled manner in application now we would make losely coupled and deploy and manage seperately and they would simply communicate with each other in losely coupled manner.
+
+-These smaller service communicating with each other directly using light weight protocols like Http2.0 etc.
+
+- Microservices code-base different and db seperate.
+
+Advantages: 
+- It is possible to change or upgrade each services individually rather than upgrading in the entire application.
+- One service may down without impacting to others.
+- Easily use different technolgy(Language agnostic but you rearely do it like that if you are using spring boot than you are continuing with that only.) for building diffrent microservices.
+- Less dependency. Loosely coupled , That means 
+  If there any error in perticular microservice occures than only that 
+  
+  
+## Microservices Architecture
+
+1. Api-Gateway
+- single end point 
+- Authentication and security
+- Example : Zule Server, Spring Cloud gateway.
+
+2. Hystrix Dashboard
+
+It is Fault Tolerant Library which handles the fault/failure around the failure of microservices.
+
+
+3. Eureka Server for Service Discovery : 
+
+- Here we would simply deploy register our microservice with the help Eureka client.
+- And there is a Config-Server also which fatches the stored-configuration for registered microservices from Github Source .
+
+4. There are also multiple-things work in this architecture according to our need like lib for loadbalancing, Http etc.
+
+
+## How microservicces contact each other : simply Rest Call.
+
+## Use CASES
+
+1. There would this 2 seprate services which is hosted in differrent server and the port. That would cause problem. -> 
+
+2.So here we would configure the Api-Gateway which provides the single endpoint.
+
+1. 
+UserService : ip:port
+
+ContactServices : ip:port
+
+
+2. Api-Gateway is itself an microservice.
+
+3. Create a Eureka server(microservices) and with the help of Eureka-client 
+- We would register all microservices over there.
+- That would resiliently manages our all microservices. 
+
+That would maintain the inter-communication of microservices and remove that locahost thing throw virtual IP it will manage all things.
+
+
+Project-Setup:
+
+1. user-service
+
+- application.yml properties which is used to maintain properties heirarchy in a better manner.
+
+Jul/12/2024/-----------------------------------------------------------------------------------------------------------------------------------------------------
+## Creating User Service and Contact Service 
+
+1. 
+- Simply define some of entity,dao (data-access-object), services, controllerRequestMapping specific to microservices
+- We would run both service in localhost but in different port.
+
+2. For calling a Rest Service from another microservice we would use RestTemplate;
+
+@Bean 
+public RestTemplate restTemplate() {
+	return new RestTemplate();
+}
+
+
+3. Use the RestTemplate object while retriving the user and call for retriving the contacts information from contact service 
+
+
+@Autowired
+public RestTemplate restTemplate;
+
+@RequestMapping("/user/{userId}")
+public User getUserInfo(@PathVariable long userId){
+	User user = userlist.getUserByID(userId);
+	List contact = this.restTemplate.getForObject("http://localhost:9002/contact/user"+ user.getUserId(), List.class);
+	user.addContactList(contact);
+	return user;
+}
+
+RestTemplate help us to connect with another microservices. Just like RestClient
+
+4. Problem above we have used statically hards coded uri to call another microservice, instead of this we can register these microservices/url in Eureka-Server and access/call throw(VirtualHost) it via Eureka-Client configured in the microservices. That would remove this hardcoding and in future we somehow we change IP/URI of microservices we simply have re-register it on Eureka-server no need to change every-where/no obstruction over microservices communication.
+
+Because Eureka maintain the Virtual_host which is is used in microservices and it is resolved by Eureka at the calling time.
+
+
+
+5. Simply add dependecies Eureka-Server pom
+
+- @EnableEurekaServer
+
+- dydefault port 8761
+- Here we have created a microservice which is Eureka-Server so we need to mention that do not register with itself.
+---------------------------------------------------
+- application.properties
+
+server: 
+	port: 8761
+
+eureka:
+	client:
+		register-with-eureka: false
+		fetchRegistry: false
+	server:
+		waitTimeInMsWhenSyncEmpty: 0
+---------------------------------------------------	
+
+Here we succefully created our server but not the eureka-client so you are not able to see the registered microservices.
+
+6. Next Step Is to Create Eureka-Client in the running services.
+
+Dependency 
+- Eureka Discovery Client
+
+Other things-to-copy 
+- Spring-cloud	
+- DependencyManagement section
+- spring-cloud-starter-netflix-eureka-client
+
+
+By Doing this just restart it will work and able to see microservices in registered section. But came with Unknown Application name.
+
+7. Now we have to configure the name 
+
+# For configuring the name of microservices 
+spring.application.name = contact-service
+spring:
+	application:
+		name: contact-services
+		
+		
+# for configuring write IP on eureka-server
+eureka:
+	instance:
+		hostname: localhost	
+		
+8. Now we can call the microservice by the registered application name on eureka-server instead of localhost:port.
+
+List contact = this.restTemplate.getForObject("http://contact-service/contact/user"+userId,List.class)
+9. Above step throw us an error unknown host exception, @LoadBalanced
+
+On RestTemplate we have to use @LoadBalanced so that it would first resolve host from eureka and then went to actual request.
+
+
+@Bean 
+@LoadBalanced
+public RestTemplate restTemplate() {
+	return new RestTemplate();
+}
+
+10. API Gateway
+Here we are building a microservice which acts as api gateway.
+
+
+- Add dependency Spring Cloud Routing Or Zuul (But only works under Spring boot version 2.0.0 and < 2.40)
+- Add Eureka Client, Actuator.
+
+- Configure the api-gatway microservice in eureka-server and define the mappings for routing into different service in api-gateway.
+
+server :
+	port:8999
+
+eureka:
+	instance:
+		hostname:localhost
+
+spring:
+	application:
+		name:api-gateway
+	cloud:
+		gateway:
+		routes:
+			- id:user-service
+			  uri: lb://user-service
+			  predicates:
+			    - Path=/user/**
+			- id:contat-service
+			  uri: lb://contact:service
+			  predicate;
+			    - Path=/contact/**
+			    
+			    
+## Currently All Microservice are bydefault calling to default port of eureka, we you wanted to deine custome then how?
+eureka.instance.port
+eureks.instance.hostname
+
+
+## Hystrix Service For Monitoring and Dashboarding.
+
+Hystrix and Hystrix-Dashboard for vizvlizing the fault-ocuured in all microservices.
+Hystrix-Dashboard featches the all fault occured and vz on the 
+
+-----------------------------------------
+##IMP Section:
+## Dependency-Management section in pom.xml file
+
+Any module that inherits from this parent POM can declare these dependencies without specifying the versions. The versions will be inherited from the dependencyManagement section.
+
+The dependencyManagement section in a Maven pom.xml file is used to centralize the dependency information for a project, particularly when dealing with multi-module projects. It allows you to specify the versions of dependencies and their transitive dependencies in a single place, ensuring consistency across all modules of the project.
+
+1. Centralized depedency managment and configuration acroose all modules
+2. Version control : We can specify the version here so that all over modules use it same version so lib version confilts problem would never arrive.
+3. Inheritance/ Transitive dependency: 
+
+  <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>5.3.9</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>5.3.9</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    
+ 
+
+----------------------------------------------------------------------------------------------	 
+
+## For initalizing the Bean and doing task before distroying that object.
+
+# PreDestroy(Before just it got destroyed) and PostConstruct (After object is autowired)
+
+- IntializingBean -> afterPropertiesSet
+- DisposableBean -> destroy
+
+# What is life of Spring IOC
+
+Container started -> Bean Init -> Dependecy Injected -> custom init method -> customer utitily method -> custom destroy method.
+
+
+# There are many ways to implement lifecycle methods.
+
+1. Annotation : PreDestroy and PostConstruct
+2. Java : Interface available I have ovveride 
+- IntializingBean -> afterPropertiesSet
+- DisposableBean -> destroy
+3. XML : do not used but there is init attribute throw which we can do that.
+
+
+------------------------------------------------------------------------------------------------
+
+Q 14). What is Bean Factory, have you used XMLBEANFACTORY ? 
+
+ConfigurableApplicationContext  -> It is indirect ofbject ->Applicationcontect -> BeanFactory
+
+
+
+
+Question : What is profile in spring boot application.
+The @Profile annotation tells Spring that those beans in the file should be instantiated only when the specified profile is active. The profile is activated using the spring.profiles.active JVM argument or the property defined in application.properties file.
+
+
+Activate statment
+1. spring.profiles.active=dev
+
+2.JVM
+java -jar your-application.jar -Dspring.profiles.active=local
+
+
+
+## profile 
+
+1. prefix application.props
+2. spring.profile.on.enabled=prod
+
+@Profile()
+
+- we can give a condition to configure the Bean or Not.  based on the profile and we can pass or activate the profile based on the jvm enviroment.
+
+
+
+---------------------------------------------------------------------------------------
+Databse concept
+Docker kubernetes and my projects.
