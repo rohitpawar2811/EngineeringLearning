@@ -227,3 +227,38 @@ Kubernetes
 Mysql
 Java
 Spring Boot
+
+
+
+Innointel Global
+
+Java Full Stack Developer
+Accion Labs
+
+ribin@stockal.com
+EmbarkX
+
+IsThread always async : parallely all tasks executes depict the same.
+
+Java and Python basics and according to job role prepare well versed. 
+
+and be good at the communication part, because it will be an major part of your selection because you are delaling with the client directly. 
+
+So you must be fluent and go with sound words and word by word/
+
+
+D
+10th Certificate
+12th marksheet
+Btech Degree
+Driving License
+Pan Card
+Photograph
+Form 16
+Statement Axis Bank : I have to confirm this with them.
+
+Experience Letter : It would be delayed slightly
+UAN card : no I have not activated 
+Bank Kyc for PF A/c : How this I have not done yet
+
+

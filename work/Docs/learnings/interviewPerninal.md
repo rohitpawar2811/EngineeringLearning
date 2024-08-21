@@ -187,3 +187,222 @@ https://www.youtube.com/watch?v=rliSgjoOFTs&list=PL6W8uoQQ2c63W58rpNFDwdrBnq5G3E
 9. StreamAPi hands on : Optional
 10. MultiThreading.
 11. Kafka and Zookeeper
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+# Innowite
+
+transaction details - id, txnAmt, txntype
+
+List<TrasactionDetails> transactionDetailsList;
+
+int amount = transactionDetailsList.stream().filter((txn) -> "credited".equals(txn.txntype))
+						.reduce(0,(txn1,txn2) -> txn.txnAmt + tx2.txn2)
+						
+						
+final class customImmutable {
+
+public final int var;
+
+
+
+}
+
+
+
+
+Signleton design Patern
+
+class Singleton{
+
+	private static Connection conn;
+
+	private Singleton(){
+
+	}
+
+	public static Connection getConnection(){
+		Syncornized{
+			if(conn != null) return conn
+
+			conn = new Connection();
+			return conn;
+			}
+	}
+
+
+}
+
+
+@Controller
+class ProductController{
+
+@RequestMapping(method="post")
+public void insertProd(@RequestBody Product product){
+
+ProductDao.
+
+}
+
+
+}
+
+
+
+employee - id, name, departId
+department  - id, name
+
+
+I have to find the count of employee on each department
+
+
+select count(emp.id), dep.name 
+from department as dep Left Join employee as emp ON dep.id == emp.departId 
+group by dep.id;
+
+
+
+
+
+
+
+
+
+
+Aayush a
+6:03 PM
+transaction details - id, txnAmt, txntype
+Aayush a
+6:14 PM
+String s1 = "hello";
+String s2 = "hello";
+String s3 = new String("hello");
+
+syso(s1 == s2);
+syso(s2 == s3);
+syso(s1.equals(s3));
+syso(s1.compareTo(s2));
+You
+6:14 PM
+true
+false
+true
+Aayush a
+6:16 PM
+try {
+	return 1;
+} catch (Exception e) {
+	return 2;
+} finally {
+	return 3;
+}
+Aayush a
+6:17 PM
+try {
+  // some line of code
+} catch (Exception e) {
+
+} catch (IOException ex) {
+
+}
+Aayush a
+6:23 PM
+syso(s1.compareTo(s2));
+Aayush a
+6:45 PM
+employee - id, name, departId
+department  - id, name
+
+
+
+
+
+- HashMap-Concurrent, HashMap
+- Scope of Bean Singleton and Prototype
+- Collection.sort()
+- ArrayList vs LinkedList
+- How I can create an immutable class
+- How can I create the singleton class
+- In a singleton class if we implement the clonable interface then it would break the aspects of singleton. So How I can we do it and how we handle the thing.
+- stream api I have to perfect a way more to crack the interview.
+- Multithreading executor method what is that I have to use that.
+- what would be the return type of compareTo method
+
+
+- What is bean Scope
+- what would be the default scope.
+- What are the different types of scope it is not just 2.
+- RequestBody and ResponseBody.
+- @RestController vs @RestBody
+- @Qualifier best question
+- Different types of injection in springBoot
+- How I can return the XML Object from the controller service.
+
+- Microservices Communication 
+- Cuircuit Breaker : How gone we implement it
+- Service Discovery and its 2 usecases and which one we are using/used.
+- Which Api gatway have you used
+- How could we build a communication between microservices
+- 
+
+- Exception handling and in which order we catch the exception
+- Can we connect multiple database with spring boot how.
+- How can we insert the data in Product Table
+- notify and notifyAll
+- How could we can create an custom Immutable class object.
+
+- Database Sql query employee and department
+
+
+------------------------------------------------------------------------
+# L2 Round Of Innowity
+
+1. Simply Frequency Counting programme using spring.
+2. There are 2 String given you have to merge in such a manner that sequence contains a1b1a2b2a3b3remaining at Last
+3. @Transactional @Query 
+4. How You would give expected time to your lead for this work
+5. How you able to work and you are confident on your skill. 
+6. Multithreading have you worked and executor framework.
+7. Two Database connection
+8. Kafka : offset
+9. Junit or any testCases I have written.
+10. SonarQube like Quality and code pratice analyser used, What is used in your compnay and how would you ensure your code quality over there.
+11. Cloud Platform : AWS, Azure
+12. Write a Rest Api which does some x work. what would be its flow
+13. Solid Principle and Design Pattern
+
+
+14. Spring Security Configuration pre/post authorization, Basic/JwtAuth in restApi
+15. Implementation of Docker File.
+16. Strema Api Practice Must
+
+
+
+
+
+-------------------------------------------------------------------------
+
+
+
+Wheels eye
+Google
+aditya sir one company.
+
+
+
+
+
+Expedia Referrals
+Wheels Eye
+SDE II - Backend Engineer Ad-Tech, JioCinema
+Software Engineer II and unleash your potential at Wayfair!
+https://www.wayfair.com/careers/thank-you?jobId=7557674002
+https://autodesk.wd1.myworkdayjobs.com/Ext/job/Novi-MI-USA/Java-Software-Engineer--Hybrid-_24WD79661?src=JB-10065&source=LinkedIn
+Atomicwork
+https://www.linkedin.com/company/honeywell/people/ : P HoneyWell
+https://voidcareers.in/f/honeywell-is-hiring-software-engineer
+ServiceNow Krish
+
+PayPal : Shivani Refferal
+
+
