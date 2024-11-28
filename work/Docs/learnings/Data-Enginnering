@@ -754,3 +754,417 @@ Key Takeaways:
 - Practice medium to hard SQL questions regularly
 
 Getting good at SQL will pay off in the long run! 💪
+
+
+----------------------------------------------------------------------------------------
+
+1. Describe your work experience.
+2. Provide a detailed explanation of a project, including the data sources, file formats, and methods for file reading.
+3. Discuss the transformation techniques you have utilized, offering an example and explanation.
+4. Explain the process of reading web API data in Spark, including detailed code explanation.
+5. How do you convert lists into data frames?
+6. What is the method for reading JSON files in Spark?
+7. How do you handle complex data? When is it appropriate to use the "explode" function?
+8. How do you determine the continuation of a process and identify necessary transformations for complex data?
+9. What actions do you take if a Spark job fails? How do you troubleshoot and find a solution?
+10. How do you address performance issues? Explain a scenario where a job is slow and how you would diagnose and resolve it.
+11. Given a dataframe with a "department" column, explain how you would add a new employee to a department, specifying their salary and increment.
+12. Explain the scenario for finding the highest salary using SQL.
+13. If you have three data frames, write SQL queries to join them based on a common column.
+14. When is it appropriate to use partitioning or bucketing in Spark? How do you determine when to use each technique? How do you assess cardinality?
+15. How do you check for improper memory allocation?
+
+
+1. Perninal
+2. Onit
+3. Paratit-Tech
+4. LogiTech
+5. Impetus
+6. Innowity
+7. 
+
+Wissen Technology
+Share
+Show more options
+Data Engineer 
+
+
+
+Kafka Interview Questions 👇
+
+🔹 What is Kafka's retention policy, and how does it work?
+🔹 How does Kafka achieve fault tolerance and handle node failures?
+🔹 Explain Kafka's partitioning strategy and how it affects performance and scalability.
+🔹 Describe Kafka's consumer offset management, and how it ensures message delivery guarantees.
+🔹 How does Kafka handle leader election for partitions, and why is it crucial for availability?
+🔹 Explain the concept of exactly-once semantics (EOS) in Kafka and its importance in data processing pipelines.
+🔹 How would you design a Kafka-based system to ensure data consistency in case of node or broker failures?
+🔹 What are the challenges involved in setting up Kafka in a multi-datacenter environment?
+🔹 How does Kafka deal with backpressure during real-time data processing, and what strategies are available to manage it?
+🔹 What techniques can be used to monitor and optimize Kafka performance in production systems?
+🔹 How does Kafka support data replication and failover to ensure high availability?
+🔹 How would you handle scaling Kafka clusters while maintaining high performance and reliability?
+
+
+
+Java • Docker Products • Git • Kubernetes • Google Cloud Platform (GCP)
+
+
+Subarray sun equal to k
+
+
+---------------------------------------------------
+(num)->{ return num<=20; }
+
+Hight of Binary Tree
+
+Class Node{
+
+	int data;
+	Node left;
+	Node right;
+	
+	public Node(int data,Node left, Node right){
+		this.data = data;
+		this.left = left;
+		this.right = right;
+	}
+}
+
+int HightOfBT(Node root){
+	if(root==null)return 0;
+	return Math.max(HightOfBT(root.left),HightOfBT(root.right))+1
+}
+
+
+public int NthNodeLL(LinkedList ll, int nth){
+	int res = -1;
+	int size =0;
+	LinkedList temp =ll;
+	while(temp!=null){
+		temp = temp.next;
+		size++;
+	}
+	
+	int n = size - nth + 1 ;
+	
+	while (ll != null){
+		if(n ==0){
+			res = ll.data;
+			break;
+		}
+		ll = ll.next;
+		n--;
+	}
+	
+	return res;
+}
+
+
+
+Product(B1 a, B2 b){
+//init
+}
+
+
+Class ProductService{
+
+ProductRepository productRepo;
+
+public ProductSerivce(ProductRepository productRepo){
+	this.productRepo = productRepo;
+}
+
+
+}
+
+
+8b
+
+1deffictive havier in 
+
+list number of iteration
+
+masuring balance
+
+
+docker-c
+
+
+
+
+
+
+int counter
+
+@Autowired
+public setCounter(int counter){
+this.counter = counter
+}
+
+
+2 Table : Emp, Dep
+
+Dep:
+name
+id
+
+Emp
+id
+name
+salary
+Dep_fk
+
+
+Find out the emp whose higest salary in departement.
+
+Select emp.name, max(emp.salary) 
+from Emp as emp Inner Join Dep as dep On emp.id = dep.id
+group by dep.id
+
+
+Select emp.name, emp.salary
+from employee
+
+
+Select max(emp.salary) 
+from Emp as emp Inner Join Dep as dep On emp.id = dep.id
+group by dep.id
+
+
+
+select 
+from Emp as emp Inner Join Dep as dep On emp.id = dep.id
+Inner Join
+select max(salary)
+from emp 
+where dep =dep.id
+
+
+
+
+
+
+
+
+
+
+
+
+[-1, 0, 1, 2, -1, -4]
+
+Unique triplet that would provide zero as sum.
+
+for(i -> n)
+	for (j= i+1 -> n)
+		for(k = j+1 -> n)
+			if(a[i]+a[j]+a[k] =0){
+			 hashSet(new Pair(a,b,c));
+			}
+
+
+
+
+Arrays.sort(arr);
+
+
+
+for(i -> n){
+
+ 2Pointers(0,0, 0-a[i]);
+
+}
+
+
+void 2Pointers(int i, int j, target){
+int sum = a[i] + a[j];
+
+if(sum < target )
+	i++;
+}
+else(sum> target){
+	j--
+}
+
+if(sum ==target){
+
+}
+
+}
+
+----------------------------------------------------------------------------
+ZiMatrix:
+
+
+final class Person{
+	private final String name;
+	private final List<Interger> num;
+	
+	public Person(String name, List<Interger> num){
+		this.name = name;
+		this.num = new List<Integer>(num);
+	}
+	
+	public String getName(){
+		return this.name;
+	}
+	
+	public List<Integer> getNumList(){
+		return new List<Interger>(num);
+	}
+}
+
+
+Q: Find first duplicate character in list
+
+
+public String FindFirstDuplicate(List<String> lis){
+	//HashSet<String> hs = new HashSet<String>();
+	
+	ArrayList<String> hs = new ArrayList<String>(lis);
+	
+	
+	for(int i=0; i< lis.size(); i++){
+		hs.remove(i);
+		if(hs.contains(lis.getAt(i))){
+			return lis.getAt(i);
+		}
+	
+	}
+	return "-1";
+	
+	
+
+}
+
+
+[a,b,c,b,a]
+
+[b,c,b,a]
+
+
+put(k,v
+
+)
+
+
+
+Person -> id name addresessID
+
+Address -> id address1, address2, cityId
+
+City -> id, name
+
+
+Select p.name, add.address1, add.address2, city.name
+from Person as p Inner Join Address as add ON p.addressID = add.id
+Inner Join City as city ON add.cityId = city.id OR add.cityId is null
+
+
+
+
+
+
+
+
+
+
+
+Movie Ticket System: 
+
+Movie
+Cinema
+User 
+Seats
+ShowTime
+Tiket
+
+Movie: 
+- uid
+- name
+- Created_dt
+- Updated_dt
+
+Cinema: 
+
+- uid
+- name
+- place 
+- Movie_fk
+//- showTime
+
+User
+
+- uid
+- name
+- mob_num
+- cur_location
+- preferences
+
+
+Seats:
+
+- uid
+- cinema_id
+- reserved_seat_num
+- Total_seat
+- Empty_seat
+
+ShowTime
+
+- uid
+- cinema_id
+- movie_Id
+- day
+- multiple_time
+
+
+Tiket
+- uid
+- Cinema_fk
+- seat_fk
+- user_fk
+- showTime
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

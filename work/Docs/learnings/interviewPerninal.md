@@ -377,7 +377,139 @@ department  - id, name
 16. Strema Api Practice Must
 
 
+# LogiTech Company Round
 
+
+1. Learn Elastic-Search what are the indices how can we use it efficently.
+2. What is Postgresh and how it is different from the mysql.
+3. How GC Work and it used to clean up the Varible and free the allocated memory.
+4. How Generics work and Why to use to use it?
+5. what is this <?> I think its for optional.
+6. @Transactional
+7. SpringMVC VS SpringMVC
+8. Finally block it is used for resource free or deallocation of resources Which is very crutial for application.
+9. Try with resource we can use it 8 th point as alternative.
+10. How to build some of sample springBoot application from screach
+
+
+List x = new ArrayList<>();
+x.add(123);
+x.add(“asdf”);
+
+Without the generics it run perfectly 
+
+
+List<?> x = new ArrayList<>();
+x.add(123);
+x.add(“asdf”);
+Try{
+}finally{
+}
+Try{
+//some code
+}finally{
+//some more code
+}
+
+Sourabh 2:52 AM
+“Robot is a great programmer”
+
+List x = new ArrayList();
+x.add(123);
+x.add(“asdf”);
+
+
+# Impetus
+
+1. Solid what is l here.
+2. Access Modifiers which access modifier has the greater visibility Default, Protected?
+3. throw vs Throws
+4. Compile Time and runtime Exception
+5. HashMap vs HashSet internal implication
+6. HashMap store the Null while TreeMap not why because of key sorting.
+7. can we change the access modifier of an varible by inheriting it.
+8. While performing inheritance we are overiding an method in subclass can we change its return type in subclass
+Answer : Only if return type are related to each other.
+No, it will not work. In Java, if you override a method in a subclass, the return type of the overridden method must be either the same as the method in the superclass or a subtype (covariant return type) of the return type in the superclass.
+
+class Animal {
+    Animal getAnimal() {
+        return this;
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    Dog getAnimal() { // Covariant return type: Dog is a subclass of Animal
+        return this;
+    }
+}
+
+9. HashMap store distinct element how can it verify because in case of collition there would be multiple different key stored at the same place.
+
+class Employee {
+    String name;
+
+    Employee(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return name.equals(employee.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode();
+    }
+}
+
+9. What if we create a custom object of employee class emp1, emp2 and make them as Key in hashMap and emp1 and emp2 has name attribute that store same name , both object treated as different in the HashMap?
+
+By default, if you do not override the hashCode() and equals() methods in your Employee class, the HashMap will treat emp1 and emp2 as different keys, even if their name attributes are the same. This is because the default implementations of hashCode() and equals() in the Object class behave as follows:
+
+10. Equals method in String class.
+
+11. Spark vs Hadoop
+12. Spark vs Hadoop vs Reduce vs Apache Hadoop
+13. Spark RDD
+14. Hands on Program to read the data and spark connection , read csv , filter emp with greater >1000, and then collect all those employee.
+Here we can we use DF, But we have to do with rdd. -> in csv rdd we got the line we have to split by using map and then filter out those employee information 
+
+15. How can we retrive the corrupted RDD in spark.
+17. How can we detect the slow job in spark.
+
+from pyspark import SparkConf, SparkContext
+
+# Step 1: Initialize Spark context
+conf = SparkConf().setAppName("EmployeeFilter").setMaster("local")
+sc = SparkContext(conf=conf)
+
+# Step 2: Read the CSV file as an RDD
+lines = sc.textFile("path/to/employee.csv")
+
+# Step 3: Split each line by comma and map to a list of strings
+employees = lines.map(lambda line: line.split(","))
+
+# Assuming the CSV has the following format: ID, Name, Salary
+# Salary is at index 2 in the list
+
+# Step 4: Filter employees with salary > 1000
+filtered_employees = employees.filter(lambda emp: float(emp[2]) > 1000)
+
+# Step 5: Collect the filtered employees
+result = filtered_employees.collect()
+
+# Print the results
+for emp in result:
+    print(f"ID: {emp[0]}, Name: {emp[1]}, Salary: {emp[2]}")
+
+# Stop the Spark context
+sc.stop()
 
 
 -------------------------------------------------------------------------
@@ -406,3 +538,94 @@ ServiceNow Krish
 PayPal : Shivani Refferal
 
 
+/*
+Welcome to JDoodle!
+
+You can execute code here in 88 languages. Right now you’re in the Java IDE.
+
+  1. Click the orange Execute button ▶ to execute the sample code below and see how it works.
+
+  2. Want help writing or debugging code? Type a query into JDroid on the right hand side ---------------->
+
+  3.Try the menu buttons on the left. Save your file, share code with friends and open saved projects.
+
+Want to change languages? Try the search bar up the top.
+*/
+import java.util.*;
+import java.util.stream.*;
+
+public class MyClass {
+  public static void main(String args[]) {
+      
+    int arr[] = new int[]{1,2,3,4,5,5};
+    
+    // Arrays.stream(arr).forEach(System.out::println);
+    
+// 1------------------------------------------------------------------------------------------------------------------------------
+    
+    // List<Integer> list = Arrays.asList(1,23,4,4,5,6,6);
+    
+    // int sum = list.stream().filter(x -> x%2==0)
+    //                         .reduce(Integer::sum)
+    //                         .orElse(0);
+    
+//reduce method in this case returning the Optional<Integer> so by using orElse(0) : it there value return actual one otherwise 0.
+
+// 2------------------------------------------------------------------------------------------------------------------------------
+
+    List<Integer> list = Arrays.asList(1,23,4,4,5,6,6);
+    int sum = list.stream().filter(x -> x%2==0)
+                            .reduce(0,(a,b) -> a+b);
+                            // .orElse(0);
+//Why rededuce not return optional in this case.
+// Optional<T> reduce(BinaryOperator<T> accumulator):
+// T reduce(T identity, BinaryOperator<T> accumulator)
+// <U> U reduce(U identity, BiFunction<U, ? super T, U> accumulator, BinaryOperator<U> combiner):
+// This version is used in parallel streams and involves a combiner function to combine partial results.
+
+
+// 3------------------------------------------------------------------------------------------------------------------------------    
+    
+//we are not able to use sum(), count() method because it is decleared in premitiveStream IntStream, DoubleStream
+// specialized streams like IntStream, LongStream, and DoubleStream, which are primitive specializations of the Stream interface.
+//So It is always must to convernt the Stream<Integer> into IntStream<Integer> and then apply the operations;
+
+    // sum = list.stream()
+    //           .filter(x -> x % 2 == 0)
+    //           .mapToInt(Integer::intValue)
+    //           .sum();
+    
+    //Here we have convered intStream into the double and then took sum from that
+//     double sum2 = list.stream()
+//                  .filter(x -> x % 2 == 0)
+//                  .mapToDouble(Integer::doubleValue) // Correct mapping
+//                  .sum();
+                 
+                 
+//  double sum = list.stream()
+//                  .filter(x -> x % 2 == 0)
+//                  .mapToDouble(Integer::doubleValue) // Correct mapping
+//                  .sum();
+
+//     System.out.println(sum2);
+
+    List<Integer> input  = Arrays.asList(1,2,3,3,22,5,3,2,5,26,27);
+
+// List<String> ans =  input.stream().map(x -> String.valueOf(x))
+//                                     .filter(x -> x.charAt(0)=='2')
+//                                     .collect(Collectors.toList());
+    
+    // Set<Integer> ans = input.stream().filter(x -> Collections.frequency(input, x) > 1).collect(Collectors.toSet());
+    
+    
+//   Map<Integer,Integer> map =  input.stream().distinct().collect(Collectors.toMap(x -> x, x -> Collections.frequency(input, x)));
+
+
+int  map = input.stream().max((a,b) ->  b-a).get();
+    
+    
+    
+    System.out.println(map);
+ 
+  }
+}
