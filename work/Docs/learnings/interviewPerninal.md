@@ -1,3 +1,6 @@
+# Interview Experiences and Questions : 
+
+## Perninal Interview Questions : 
 interface Operator {
 int plus (int a, int b);
 }
@@ -50,44 +53,42 @@ Aseem Perennial
 Input - > "My name is ABC"
 Output -> "ym eman si cba"
 
-Distributed tracing
-How would we can communicate to our api to other api
-Microservices 
-How we can build a microservices using **docker** and how we are able to deploy in the containerized environement. 
+- Distributed tracing
+- How would we can communicate to our api to other api
+- Microservices 
+- How we can build a microservices using **docker** and how we are able to deploy in the containerized environement. 
 
-StreamAPi
-@Qualifier
-@GlobalExceptionHandling
-@Bean Vs @Component
-@ConfigurationPropertie
-Kafka and Zookeeper
-One Programming based question : reversal programme
-Java Concept Spring Bean what is lifecylce
+- StreamAPi
+- @Qualifier
+- @GlobalExceptionHandling
+- @Bean Vs @Component
+- @ConfigurationPropertie
+- Kafka and Zookeeper
+- One Programming based question : reversal programme
+- Java Concept Spring Bean what is lifecylce
 
-OOPs why to use ops in project?
-Design Pattern I would know
-Runtime polymorophish
-Docker
-PortForwarding
-RestTemplate
-Apache Solr what is that and how you integrate in springBoot system.? Let US Know
+- OOPs why to use ops in project?
+- Design Pattern I would know
+- Runtime polymorophish
+- Docker
+- Port-Forwarding
+- RestTemplate
+- Apache Solr what is that and how you integrate in springBoot system.? Let US Know
 
 Updated Solr Doc SolrInputDocument(fields: [picklistItemStatusId={set=PICKITEM_COMPLETED}, shipmentStatusId={set=SHIPMENT_SHIPPED}, itemShippedDate={set=Mon Jul 22 22:54:14 EDT 2024}, orderStatusId={set=ORDER_COMPLETED}, picklistItemStatusDesc={set=Completed}, docType-identifier=OISGIR-43439-00101-00001-90533, updatedDatetime={set=Mon Jul 22 22:54:14 EDT 2024}, fulfillmentStatus={set=Completed}])
 
 ------------------------------------------------------------------
 Question 1.
-Regression vs Re-testing , smoke vs sanity testing , bug life cycle , sdlc & stlc, api testing related questions , database testing questions.
-------------------------------------------------------------
-Question 2.
-Oops Concepts & Automation API & UI
----------------------------------------------------------------------
-
-questions.
-1. clouser
-2.let and var hoisting concept
+ Regression vs Re-testing , smoke vs sanity testing , bug life cycle , sdlc & stlc, api testing related questions , database testing questions.
+------------------------------------------------------------------
+Question 2. 
+ Oops Concepts & Automation API & UI
+------------------------------------------------------------------
+Question 3.
+1. closuer
+2. let and var hoisting concept
 3. shallow and deep copy
-
-------------------------------------------------------------
+------------------------------------------------------------------
 
 
 
@@ -189,8 +190,8 @@ https://www.youtube.com/watch?v=rliSgjoOFTs&list=PL6W8uoQQ2c63W58rpNFDwdrBnq5G3E
 11. Kafka and Zookeeper
 
 
---------------------------------------------------------------------------------------------------------------------------------------------
-# Innowite
+------------------------------------------------------------------------
+## Innowite Tech Solutions
 
 transaction details - id, txnAmt, txntype
 
@@ -201,15 +202,8 @@ int amount = transactionDetailsList.stream().filter((txn) -> "credited".equals(t
 						
 						
 final class customImmutable {
-
-public final int var;
-
-
-
+  public final int var;
 }
-
-
-
 
 Signleton design Patern
 
@@ -337,25 +331,26 @@ department  - id, name
 - @Qualifier best question
 - Different types of injection in springBoot
 - How I can return the XML Object from the controller service.
+  Producer Object media.Application_XML
 
 - Microservices Communication 
-- Cuircuit Breaker : How gone we implement it
+- Circuit Breaker : How gone we implement it
+- fallback
 - Service Discovery and its 2 usecases and which one we are using/used.
+- Distributed Tracing : logging with uid thow that we could track the request. 
 - Which Api gatway have you used
-- How could we build a communication between microservices
-- 
+- How could we build a communication between microservices: Sync/Async restApi and there is something more.
 
 - Exception handling and in which order we catch the exception
 - Can we connect multiple database with spring boot how.
 - How can we insert the data in Product Table
 - notify and notifyAll
 - How could we can create an custom Immutable class object.
-
 - Database Sql query employee and department
 
 
 ------------------------------------------------------------------------
-# L2 Round Of Innowity
+## L2 Round Of Innowity
 
 1. Simply Frequency Counting programme using spring.
 2. There are 2 String given you have to merge in such a manner that sequence contains a1b1a2b2a3b3remaining at Last
@@ -376,8 +371,8 @@ department  - id, name
 15. Implementation of Docker File.
 16. Strema Api Practice Must
 
-
-# LogiTech Company Round
+------------------------------------------------------------------------
+## LogiTech Company Round
 
 
 1. Learn Elastic-Search what are the indices how can we use it efficently.
@@ -418,8 +413,9 @@ List x = new ArrayList();
 x.add(123);
 x.add(“asdf”);
 
+------------------------------------------------------------------------
 
-# Impetus
+## Impetus
 
 1. Solid what is l here.
 2. Access Modifiers which access modifier has the greater visibility Default, Protected?
@@ -485,34 +481,34 @@ Here we can we use DF, But we have to do with rdd. -> in csv rdd we got the line
 
 from pyspark import SparkConf, SparkContext
 
-# Step 1: Initialize Spark context
+-> Step 1: Initialize Spark context
 conf = SparkConf().setAppName("EmployeeFilter").setMaster("local")
 sc = SparkContext(conf=conf)
 
-# Step 2: Read the CSV file as an RDD
+-> Step 2: Read the CSV file as an RDD
 lines = sc.textFile("path/to/employee.csv")
 
-# Step 3: Split each line by comma and map to a list of strings
+-> Step 3: Split each line by comma and map to a list of strings
 employees = lines.map(lambda line: line.split(","))
 
-# Assuming the CSV has the following format: ID, Name, Salary
-# Salary is at index 2 in the list
+// Assuming the CSV has the following format: ID, Name, Salary
+// Salary is at index 2 in the list
 
-# Step 4: Filter employees with salary > 1000
+-> Step 4: Filter employees with salary > 1000
 filtered_employees = employees.filter(lambda emp: float(emp[2]) > 1000)
 
-# Step 5: Collect the filtered employees
+-> Step 5: Collect the filtered employees
 result = filtered_employees.collect()
 
-# Print the results
+-> Print the results
 for emp in result:
     print(f"ID: {emp[0]}, Name: {emp[1]}, Salary: {emp[2]}")
 
-# Stop the Spark context
+-> Stop the Spark context
 sc.stop()
 
 
--------------------------------------------------------------------------
+------------------------------------------------------------------------
 
 
 
@@ -629,3 +625,103 @@ int  map = input.stream().max((a,b) ->  b-a).get();
  
   }
 }
+
+## UKG
+
+### Round 1
+1. Final class member variable vs public member variable in springBoot.
+2. Stream Api producer, consumer.
+3. How could we create immutable class
+4. Try-catch
+5. LinkedList nth node from the last.
+6. Find the Height of the tree.
+7. @Transactional & its diffrent propagations types.
+8. Locking vs custom Locking
+9. Sql-Query
+10. What is filter
+11. Puzzle one question you have given like 8 balls and there is one old ancient wheight balancing machine.
+
+### Round 2
+1. Book-My-Show Schema-Design. 
+2. 2 Pointer algoritihm.
+3. Sql question to get last2nd salary.
+4. Rank Vs Dense Rank
+5. Solr related Questions have asked
+
+
+## Walmart Global Tech Coding round
+
+1. Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+ 
+We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
+ 
+You must solve this problem without using the library's sort function.
+ 
+Example 1:
+ 
+Input: nums = [2,0,2,1,1,0]
+Output: [0,0,1,1,2,2]
+ 
+ 
+ 
+Example 2:
+ 
+Input: nums = [2,0,1]
+Output: [0,1,2]
+
+
+2. Shortest Subarray to be Removed to Make Array Sorted
+=====================
+Example 1:
+Input: arr = [1,2,3,10,4,2,3,5]
+Output: 3
+ 
+Example 2:
+Input: arr = [5,4,3,2,1]
+Output: 4
+ 
+Example 3:
+Input: arr = [1,2,3]
+Output: 0
+
+
+{3,3}
+
+{10, 1}
+{4,1}
+
+
+
+Map map;
+Int I =0
+For ( int ele : arr) {
+
+Map.put(ele, )
+}
+## Zimeterics
+1. Immuatable class implementaion
+2. Find first occurance of element.
+3.  Filter
+4. Sql writing something
+
+
+## RiseSmart by Randstand
+
+1. Spring-Boot
+2. coding question 
+3. what if there is class A which is instansiated with the new keyword and A class has dependecy with B and C and it used dependecy injection. So it will be able to resolve the dependency or not.
+4. Compile time and Runtime Overiding and resolution of data-type.
+5. Compile time overriding.
+
+## Go-Daddy Interview 
+
+1. Remove-LinkedList Node question.
+2. which SpringBoot version is used if used the old one then 
+3. JPA and Hibernet 
+4. Different states of hibernet.
+5. Transaction management and diffrent propagation 
+6. If you have miroservice then how would handle the distributed transactions.
+7. HashMap internals and while using Object as key needed things to override -> equals and hashcode method to uniqely identify it.
+8. How and What is the need of ConcurrentHashMap and which time of inconsistenecy of data occured while using normal not threadsafe HashMap.
+
+## MinTech for JavaDeveloper Role
