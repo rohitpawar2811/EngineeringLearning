@@ -717,7 +717,7 @@ Map.put(ele, )
 
 1. Remove-LinkedList Node question.
 2. which SpringBoot version is used if used the old one then 
-3. JPA and Hibernet 
+3. JPA and Hibernet and Hibernet cache l1 and l2
 4. Different states of hibernet.
 5. Transaction management and diffrent propagation 
 6. If you have miroservice then how would handle the distributed transactions.
@@ -725,3 +725,14 @@ Map.put(ele, )
 8. How and What is the need of ConcurrentHashMap and which time of inconsistenecy of data occured while using normal not threadsafe HashMap.
 
 ## MinTech for JavaDeveloper Role
+1. Dependency injection types : constructor(mandatored dependecy injection), setter(optional dependency injection), field based(visibility less, Junit complicate)
+2. SpringBootTest vs Mockito : SpringBootTest -> we can utilize the springboot context here in the test cases while in Mockito we can't.
+3. Bean ? -> Java object which is managed by spring
+4. Multithreading and ExecutorService
+5. @Async , @Scheduler(cron="*******")
+6. @EnableAutoConfiguration(exclude="")
+7. @SpringBootApplication -> @Configuration, @ComponentScan(path="/*"), @EnableAutoConfiguration
+8. How could we create custom AutoConfiguration class ?
+9. @Pageable
+10. What is profile in spring-boot.
+11. Microservice -> configServer, Zepkin, ServiceRegistry.
