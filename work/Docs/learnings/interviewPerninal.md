@@ -739,6 +739,242 @@ Map.put(ele, )
 
 ## TrueMeds For Senior Java developer
 
+List<Product> ->
+Product -> comanyName, ProductCode, PName
+
+
+listProduct.stream()
+.collect() 
+
+
+Write a query to count the number of orders placed by each customer. Return only those who placed more than 5 orders.
+
+Order -> id , custID
+Select customer_id, count(order_id)
+From order
+group by customer_id
+having count(order_id) > 5
+
+
+
+Pankaj Patil
+4:06 PM
+https://leetcode.com/problems/container-with-most-water/description/
+Pankaj Patil
+4:56 PM
+Write a query to count the number of orders placed by each customer. Return only those who placed more than 5 orders.
+You
+4:59 PM
+Select customer_id, count(order_id)
+From order
+group by customer_id
+having count(order_id) > 5
+
+
+Map<String, List<Product>> groupedByCompany = products.stream()
+            .collect(Collectors.groupingBy(Product::getCompany));
+            
+1. Constuctor Injection vs @AutoWired
+2. Index how it internally works
+3. How to design Api rate limiter and which datastructure is used for that
+4. catch and finally block : 
+	try {
+		return 10;
+	}
+	catch () {
+
+	}
+	finally {
+		return 20;
+	}
+
+ans : 20 because finally always runs it would suppress the try block return statement, There is case if System.exit(1) present in the try block then finally block would be execute as it interuppt the program itself.
+
+5. @Query native and HPQL How can we decide: There is attribute nativeQuery = true.
+6. SteroTypeAnnotation
+7. What If in Repository class but @Service annotation , would we get any problem with it.
+9. Except than JPARepository what are other 2 ways to execute DTO opration in SpringBoot query.
+10. STREAM-QUESTION
+11. FUNCTIONAL INTERFACE
+12. How to debug a task.
+13. Connection Polling
+14. Indexes
+15. Sharding DB.
+17. How to solve dependency cycle problem.
+18. What are the different strategy or type in which we can AutoIncrement @Id @GeneratedValue(strategy= )
+
+
 ## Cyient 
 
-## HCL
+Java Interview questions 
+
+1. How does the Java Stream API handle parallelism internally? What are the best practices for parallel streams?
+2. What is the difference between final, const, and immutable in Java?
+3. Explain how the PhantomReference class works and its use cases.
+4. How does Java's CompletableFuture handle exceptions? Explain with an example.
+5. What are the main differences between Hashtable and ConcurrentHashMap?
+6. What is the role of Unsafe class in Java? Why should it be used cautiously?
+7. Describe how you would implement a thread-safe singleton in Java.
+8. What are Java annotations retention policies, and why are they important?
+9. How do you implement a custom serializer/deserializer in Jackson for JSON processing?
+10. What is the difference between Predicate, Function, and Consumer functional interfaces?
+
+# Inteview Experience Cyient : 
+
+1. Compile time and runtime polymorphism
+2. SCP
+3. Runnable and callable 
+4. Encapsulation and abstration
+5. IOC
+6. Spring Intializer
+7. @Autowired
+8. Interface vs abstract class
+9. @Controller Vs @RestController
+10. Region and availability Zone
+11. What is Keypair in S3: ssh public and private key pair for ec2 instance access.
+12. EC2 instances
+13. Pricing EC2 instancs
+14. Princing S3 Instaces
+15. Limit on S3 bucket creation. : Yes
+16. CloudFront
+18. CloudWatch
+
+https://medium.com/@sujathamudadla1213/amazon-s3-bucket-creation-limitations-973d806a899f
+
+# HCL Interview
+
+1. Kadane algorithm
+2. OoPS conecept and how it works in Java : Encapsulatio, Inheritance, Polymorphism, Abstraction
+3. Return Type overloading.
+4. Fail-safe and fail-fast in collection.
+5. Volatile and AtomicInteger
+6. transient vs @Transient annotation.
+7. @EnableAutoConfiguation vs @ConditionalOnMissingBean @ConditionalOnClassLoad
+8. Externalizable 
+9. ArrayList vs LinkedList
+10. What are the predefined functional-interface.
+11. Association, Composition (stronger form of association), aggregation(Weaker form of association )
+
+
+
+Question: What is Externalizable ?
+
+Externalizable is an interface in Java (part of java.io package).
+It is used for custom serialization and deserialization.
+It extends Serializable interface, but gives you complete control over what and how to serialize/deserialize.
+
+void writeExternal(ObjectOutput out) throws IOException;
+void readExternal(ObjectInput in) throws IOException, ClassNotFoundException;
+
+Question: Fail-safe and fail-fast in collection.
+
+Ans -> A fail-fast iterator immediately throws a ConcurrentModificationException if you modify the collection (add/remove/update) structurally while iterating over it (except using iterator’s own remove() method).
+
+A fail-safe iterator does not throw ConcurrentModificationException, even if the collection is modified during iteration.
+It works on a clone (copy) or snapshot of the collection.
+
+Example: 
+	- ConcurrentHashMap
+	- CopyOnWriteArrayList
+	- CopyOnWriteArraySet
+
+
+Question: What are the predefined functional-interface
+
+Function<T, R>        → T → R
+BiFunction<T, U, R>   → (T, U) → R
+Predicate<T>          → T → boolean
+BiPredicate<T, U>     → (T, U) → boolean
+Consumer<T>           → T → void
+BiConsumer<T, U>      → (T, U) → void
+Supplier<T>           → () → T
+UnaryOperator<T>      → T → T
+BinaryOperator<T>     → (T, T) → T
+
+Question : @EnableAutoConfiguation vs @ConditionalOnMissingBean @ConditionalOnClassLoad?
+@EnableAutoConfiguration
+        ↓
+@Import(AutoConfigurationImportSelector)
+        ↓
+Reads META-INF/spring.factories
+        ↓
+Loads and registers auto-config classes
+        ↓
+Conditions decide which beans to create
+
+Question: Volatile vs Atomic Integer
+
+
+
+--------------------------------------------------------------------
+# AWS
+
+## AWS S3 limitation
+
+- Bucket names must be globally unique and not IP-like.
+
+- Bucket ownership stays with the creator; cannot transfer.
+
+- Region is fixed after creation; can’t change.
+
+- Default limit: 100 buckets per region (can request increase).
+
+- No bucket size limit; single object max 5 TB.
+
+- High request rates may cause throttling (503 errors).
+
+- Access control must be configured carefully.
+
+- Cannot rename buckets once created.
+
+- Enable logging/versioning for safety.
+
+- Buckets can be deleted only when empty; names reusable after ~24 hrs.
+
+Ques. What are amazone AWS Services which is not region specific ?
+Ans -> Route53, AWS IAM and Aws cloud-front
+
+Ques. EC2 va Lambda
+
+- Amazon Ec2 provide virtual serviers that you mange, while Aws lambda runs code in response to events and scales automatially.
+
+- Choose EC2 for long-running taks or when you need more control over the environment.
+	- example: hosting a website with specific software requirements or running a db server.
+
+- Choose Lambda for even-driven, short-lived taks with automatic scalling. 
+	- example : processing even-driven actions such as file uploads, database updates, or API requests, S3 event-driven action we can start.
+	
+Question:  Cloud-Formation 
+Question: In VPC with private and public subnets, database servers should ideally be launched into whihc subnet ? NAt instances 
+
+---------------------------------------------------------------------------------------------
+# Work
+
+1. Ay -ongoing
+2. Tmax-AdScript
+3. Mywork	
+	
+	
+📌 LLD
+
+1. Design a parking lot management system (Can be multilevel)
+ 2. Design Chess Game
+ 3. Design LRU Cache
+ 4. Design Tic Tac Toe Game
+ 5. Design a threadsafe hashmap.
+ 6. Design Rate-Limiter.
+
+📌 HLD
+
+1. Design a URL shortening service like tinyUrl.
+ 2. Design a distributed key-value store.
+ 3. Design a real-time messaging system like WhatsApp.
+ 4. Design a distributed cache like Memcached.
+ 5. Design a ride-sharing system like Uber.
+
+This is based on both personal experience and what’s trending in real interviews.
+
+Once I focused on understanding the “why” behind every component, things started clicking, and offers started coming.
+
+
+--------------------------------------------------------------------------------------------------------------------------

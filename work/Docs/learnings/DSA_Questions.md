@@ -1163,6 +1163,36 @@ class Main {
     }
 }
 
+60.
+
+Please provide the solution and problemstatements of these mentioned problems
+
+𝐒𝐨𝐫𝐭𝐢𝐧𝐠 & 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠
+🔹 Search in Rotated Sorted Array – https://lnkd.in/gt8nYfs4
+🔹 Median of Two Sorted Arrays – https://lnkd.in/g7dV4DcJ
+🪟 𝐒𝐥𝐢𝐝𝐢𝐧𝐠 𝐖𝐢𝐧𝐝𝐨𝐰
+ 3. 🔹 Minimum Window Substring – https://lnkd.in/gQa2S4W6
+ 4. 🔹 Longest Repeating Character Replacement – https://lnkd.in/gaEeGNJD
+📊 𝐏𝐫𝐞𝐟𝐢𝐱 𝐒𝐮𝐦
+ 5. 🔹 Subarray Sum Equals K – https://lnkd.in/gKMvGjic
+ 6. 🔹 Range Sum Query - Immutable – https://lnkd.in/gyU-V6aB
+🧵 𝐓𝐫𝐢𝐞𝐬
+ 7. 🔹 Implement Trie (Prefix Tree) – https://lnkd.in/gJWPgMxW
+ 8. 🔹 Word Search II – https://lnkd.in/g9gPWmze
+🧠 𝐃𝐲𝐧𝐚𝐦𝐢𝐜 𝐏𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠
+ 9. 🔹 Coin Change II – https://lnkd.in/gHh4VYdU
+ 10. 🔹 Word Break II – https://lnkd.in/gifJtP37
+ 11. 🔹 Longest Palindromic Substring – https://lnkd.in/g-R59vcE
+🔄 𝐁𝐚𝐜𝐤𝐭𝐫𝐚𝐜𝐤𝐢𝐧𝐠
+ 12. 🔹 Subsets II – https://lnkd.in/g87BjD2z
+ 13. 🔹 Palindrome Partitioning – https://lnkd.in/gYru9v7P
+🌐 𝐆𝐫𝐚𝐩𝐡𝐬
+ 14. 🔹 Course Schedule II – https://lnkd.in/gjv_ijdk
+ 15. 🔹 Word Ladder II – https://lnkd.in/gBTgDYjH
+.
+
+
+
 
 
 

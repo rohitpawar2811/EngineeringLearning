@@ -1,4 +1,4 @@
-System Design-SDE1-Rohit Pawar-FTE-HeyCoach-Panel
+# System Design-SDE1-Rohit Pawar-FTE-HeyCoach-Panel
 
 Q1. Use proper implementation of SOLID design pattern  on below snap of code in Coffee Machine design.
 Which principle is violated ? 
@@ -211,4 +211,15 @@ https://excalidraw.com/#room=711dc56d0884bef1bd2e,IJ0LJStHmrGn7VOBqmSY6g
 
 
 
+# Parking Lot Design
 
+Currently I am thinking that Parking_Lot Design is specific to an location and its working is in like kind of ERP 
+ 
+
+1. Vehical ->  Car, Bike, Bicycle, Activa
+2. Parking_lot -> Vehical, slot-area_id_from, slot_area_id_to
+3. Parking_Inventory_Management -> vehical, avialble_slot_info 
+4. Reservation -> Vehical, parking_lot, allocated_slot_id, reservation_status
+5. Track_Parking_Slot -> slot_id
+6. Payment
+7. Reservation_Status
